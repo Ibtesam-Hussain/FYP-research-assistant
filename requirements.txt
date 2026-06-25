@@ -1,0 +1,5 @@
+streamlit
+chromadb
+rank_bm25
+openai
+pytest
