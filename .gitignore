@@ -6,3 +6,4 @@ data/processed/*
 data/raw/*
 chromadb/ 
 models/
+loading-script.py
