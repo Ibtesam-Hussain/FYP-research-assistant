@@ -3,3 +3,17 @@ chromadb
 rank_bm25
 openai
 pytest
+
+pymupdf==1.24.1
+pymupdf4llm==0.0.17
+langchain-text-splitters==0.2.0
+langchain-core==0.2.5
+
+sentence-transformers==3.0.1
+torch==2.3.1
+numpy==1.26.4
+onnxruntime==1.18.0
+
+
+
+
