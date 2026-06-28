@@ -1,0 +1,66 @@
+--- [STAGE 1] PARSING AND CHUNKING ---
+Generated 58 chunks from the PDF.
+
+--- [STAGE 2] GENERATING DENSE VECTORS ---
+Loading embedding model: models\Embedding models\bge-base-en (first run downloads weights)
+Loading weights: 100%|█████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 2965.04it/s]
+Batches: 100%|███████████████████████████████████████████████████████████████████████| 2/2 [01:01<00:00, 30.83s/it]
+
+INSPECTING THE VECTOR MATRIX (LAYMAN SANITY CHECK)
+• Vector Matrix Shape: (58, 768)
+  └─ 58 chunks total
+  └─ 768 dimensional coordinates per chunk
+• Sample Vector Content (First 5 dimensions of Chunk 0):
+  [ 0.02442499 -0.0007354  -0.00657017  0.02745477  0.04101091] ...
+
+--- [STAGE 3] SIMULATING A USER QUERY ---
+User Query: 'What architecture or training strategy did the authors propose?'
+
+--- [STAGE 4] RUNNING MATHEMATICAL RETRIEVAL (DOT PRODUCT) ---
+
+TOP 3 MOST RELEVANT CHUNKS MATCHED IN VECTOR SPACE:
+================================================================================
+
+[RANK 1] Similarity Match Score: 0.4653
+Metadata Profile: {'source_file': '1812.11671v1.pdf', 'page_num': 6, 'section_heading': 'Unsupervised monocular stereo matching'}
+Text Snippet:
+the right view relative to left view. Then, we can reconstructed right view _I_ [¯] _[r]_ by the bilinear sampling function _I_ _[l]_ ( _d_ _[r]_ ). We can training the loss function by supervising on the image alignment
+loss between the original right view _I_ _[r]_ and synthesis right view _I_ [¯] _[r]_ to generate view synthesis
+network model. Similarly, we can also use the convolutional neural network to process input
+left view _I_ _[l]_ for obtaining the dense correspondence field _d_ _[l]_ that was the disparity map of the
+left view relative to right view. Then,we can synthesize the left view given the right view by the
+bilinear sampling formula _I_ [¯] _[l]_ _=_ _I_ _[r]_ ( _d_ _[l]_ ) and optimize the alignment loss function between the
+original view and the synthetic view. During testing, we just need to input the left view into the
+trained network model to estimate the right view, instead of stereo pairs like the input in training stage. Then we can input the concatenation of both left and synthetic right views into the
+stereo matching network to estimate depth with similar principles as described above.  
+_3.2_ _Network Architecture_
+--------------------------------------------------------------------------------
+
+[RANK 2] Similarity Match Score: 0.4443
+Metadata Profile: {'source_file': '1812.11671v1.pdf', 'page_num': 15, 'section_heading': 'Unsupervised monocular stereo matching'}
+Text Snippet:
+**Fig** **7** The visual comparative result from different input data of stereo matching network at the training stage.  
+where the SSD means that both the input data and the supervised data contain the synthesized right view, the  
+OOD means that original right view as these two kinds of data, and that the SOD was that input data contain  
+synthesized right view and the supervised data include original right view.  
+in Table 4. Where, in the training phase, the SSD refers to the original left view and synthesized
+right view as the stereo pairs, the OOD means that we use the original stereo pairs as as the
+stereo pairs, and the SOD refers to the original left view and synthesized right view as the stereo
+pairs. However, in the testing phase, mixed stereo pairs is used as the input of the three training
+models. As can be seen from table 3, no matter the evaluation caps is 50m or 80m, the training
+mode of the SOD is better than the other two training modes, and the evaluation metrics of
+the SSD training mode is the worst, even lower than monocular depth estimation methods of
+Godard et al. [13] . At the depth cap of 80m, the performance of the OOD and the SOD are not
+--------------------------------------------------------------------------------
+
+[RANK 3] Similarity Match Score: 0.4437
+Metadata Profile: {'source_file': '1812.11671v1.pdf', 'page_num': 8, 'section_heading': 'Unsupervised monocular stereo matching'}
+Text Snippet:
+image or the concatenation of the original left image and the composite right image as inputs,
+and there is no ground truth depth data as the supervised label in the training stage. Therefore,
+we are inspired by Refs 13 to estimates the disparity map by optimizing image alignment loss,
+left-right disparity consistency loss and spatial smoothness loss. We define a loss _Lθ_ as the total
+loss of the different constraint forms for two network model.  
+_Lθ = αLia +_ _βLss +_ _γLdc_ (2)  
+8
+--------------------------------------------------------------------------------
