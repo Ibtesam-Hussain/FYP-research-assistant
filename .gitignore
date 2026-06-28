@@ -4,6 +4,9 @@ __pycache__/
 .env.*
 data/processed/*
 data/raw/*
-chromadb/ 
+!data/raw/what-to-add.txt
+chroma*/
+bm25*
+bm25*/ 
 models/
 loading-script.py
