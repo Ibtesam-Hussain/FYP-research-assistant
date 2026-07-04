@@ -29,6 +29,8 @@ from src.retrieval.dense_retriever import DenseRetriever
 from src.retrieval.sparse_retriever import SparseRetriever
 from src.retrieval.fusion import reciprocal_rank_fusion
 from src.retrieval.reranker import Reranker
+from src.generation.prompt_templates import build_rag_prompt
+from src.generation.llm_client import LLMClient
 
 # How many candidates each retriever pulls BEFORE fusion. Wider than the
 # final answer set so fusion/reranking have real material to re-sort,
@@ -51,6 +53,7 @@ class RAGPipeline:
         dense_retriever: DenseRetriever = None,
         sparse_retriever: SparseRetriever = None,
         reranker: Reranker = None,
+        llm_client: LLMClient = None,
     ):
         # Each of these loads a model on construction (BGE embedder,
         # BM25 index, cross-encoder) -- exactly why this happens once,
@@ -59,6 +62,7 @@ class RAGPipeline:
         self.dense_retriever = dense_retriever or DenseRetriever()
         self.sparse_retriever = sparse_retriever or SparseRetriever()
         self.reranker = reranker or Reranker()
+        self.llm_client = llm_client or LLMClient()
         print("RAG pipeline ready.")
 
     def retrieve(
@@ -93,6 +97,40 @@ class RAGPipeline:
             "final_results": reranked,
         }
 
+    def query(
+        self,
+        user_query: str,
+        retrieval_top_k: int = RETRIEVAL_TOP_K,
+        rerank_pool: int = RERANK_CANDIDATE_POOL,
+        final_top_k: int = FINAL_TOP_K,
+    ) -> dict:
+        """
+        Full pipeline: retrieve -> build prompt -> generate answer.
+
+        Returns a dict with the final chunks AND intermediate stage
+        outputs (same shape as retrieve()) plus the generated answer,
+        so callers get both the answer and full retrieval provenance.
+        """
+        retrieval_output = self.retrieve(
+            user_query,
+            retrieval_top_k=retrieval_top_k,
+            rerank_pool=rerank_pool,
+            final_top_k=final_top_k,
+        )
+
+        final_chunks = retrieval_output["final_results"]
+        messages = build_rag_prompt(user_query, final_chunks)
+        answer = self.llm_client.generate(messages)
+
+        return {
+            "query": user_query,
+            "answer": answer,
+            "final_results": final_chunks,
+            "dense_results": retrieval_output["dense_results"],
+            "sparse_results": retrieval_output["sparse_results"],
+            "fused_results": retrieval_output["fused_results"],
+        }
+
 
 if __name__ == "__main__":
     # End-to-end smoke test against your REAL index (no fake data here --
@@ -100,10 +138,11 @@ if __name__ == "__main__":
     pipeline = RAGPipeline()
 
     # test_query1 = "How does monocular depth estimation compare to stereo depth estimation?"
-    test_query = "What method does the monocular depth estimation use to handle occlusion in depth estimation?" 
-    result = pipeline.retrieve(test_query)
+    # test_query = "What method does the monocular depth estimation use to handle occlusion in depth estimation?" 
+    test_query = "What is the main limitation of monocular depth estimation?"
+    result = pipeline.query(test_query)
 
-    print(f"\nQuery: {test_query}")
+    print(f"\nQuery: {result['query']}")
     print(f"\nDense candidates: {len(result['dense_results'])}")
     print(f"Sparse candidates: {len(result['sparse_results'])}")
     print(f"Fused candidates: {len(result['fused_results'])}")
@@ -112,3 +151,8 @@ if __name__ == "__main__":
         print(f"\n[{i}] chunk_id={r['chunk_id']}  rerank_score={r['rerank_score']:.4f}")
         print(f"    source={r['metadata'].get('source_file')}  page={r['metadata'].get('page_num')}")
         print(f"    text preview: {r['text'][:]}")
+
+    print(f"\n{'='*60}")
+    print("ANSWER:")
+    print('='*60)
+    print(result["answer"])
