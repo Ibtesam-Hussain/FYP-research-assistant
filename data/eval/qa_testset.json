@@ -1,1 +1,226 @@
-[]
+[
+  {
+    "question_id": "q001",
+    "question": "What is the main limitation of monocular depth estimation compared to stereo methods?",
+    "reference_answer": "Monocular depth estimation is fundamentally ambiguous and struggles with scale ambiguity; it also often depends heavily on training data and generalizes less reliably than stereo methods.",
+    "relevant_chunk_ids": ["Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00002"],
+    "question_type": "factual",
+    "answerable": true
+  },
+  {
+    "question_id": "q002",
+    "question": "How does unsupervised monocular depth estimation avoid the need for ground truth depth data?",
+    "reference_answer": "It uses image alignment loss / photometric loss rather than ground-truth depth supervision, estimating disparity maps by enforcing consistency between synthesized and real views.",
+    "relevant_chunk_ids": ["1812.11671v1.pdf_00003", "1812.11671v1.pdf_00004"],
+    "question_type": "methodological",
+    "answerable": true
+  },
+  {
+    "question_id": "q003",
+    "question": "What two sub-problems does the paper 1812.11671 decompose monocular depth estimation into?",
+    "reference_answer": "Right view synthesis and stereo matching.",
+    "relevant_chunk_ids": ["1812.11671v1.pdf_00004"],
+    "question_type": "factual",
+    "answerable": true
+  },
+  {
+    "question_id": "q004",
+    "question": "What are the five main challenges for future monocular depth estimation methods identified in the thorough review paper?",
+    "reference_answer": "Integration and optimization of network frameworks, dataset construction, handling dynamic objects and occlusions, generating high-resolution depth maps, and achieving real-time performance.",
+    "relevant_chunk_ids": ["Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00020"],
+    "question_type": "factual",
+    "answerable": true
+  },
+  {
+    "question_id": "q005",
+    "question": "In what scenarios is stereo depth estimation more accurate than monocular estimation according to martins2018?",
+    "reference_answer": "Stereo vision is more accurate than monocular vision at most distances, except very close by.",
+    "relevant_chunk_ids": ["martins2018.pdf_00005"],
+    "question_type": "factual",
+    "answerable": true
+  },
+  {
+    "question_id": "q006",
+    "question": "What network architecture does martins2018 use for monocular depth estimation?",
+    "reference_answer": "A Fully Convolutional Network (FCN) based on the VGG network, pruned of its fully connected layers, with two deconvolutional layers added.",
+    "relevant_chunk_ids": ["martins2018.pdf_00001"],
+    "question_type": "methodological",
+    "answerable": true
+  },
+  {
+    "question_id": "q007",
+    "question": "What visual cues do traditional handcrafted feature-based monocular depth estimation methods use?",
+    "reference_answer": "Texture variations, occlusion boundaries, defocus, color/haze, surface layout, and size of known objects.",
+    "relevant_chunk_ids": ["2111.08600v1 (1).pdf_00001"],
+    "question_type": "factual",
+    "answerable": true
+  },
+  {
+    "question_id": "q008",
+    "question": "How does monocular depth estimation handle the scale ambiguity problem?",
+    "reference_answer": null,
+    "relevant_chunk_ids": [],
+    "question_type": "corpus_absent",
+    "answerable": false
+  },
+  {
+    "question_id": "q009",
+    "question": "What is the RMSE of the method proposed in 1812.11671 on the KITTI benchmark?",
+    "reference_answer": null,
+    "relevant_chunk_ids": [],
+    "question_type": "corpus_absent",
+    "answerable": false
+  },
+  {
+    "question_id": "q010",
+    "question": "What semi-supervised methods are discussed in the thorough review paper and what advantage do they offer?",
+    "reference_answer": "Semi-supervised methods trained on small numbers of labeled images and large numbers of unlabeled images are important for reducing annotation costs and improving prediction accuracy.",
+    "relevant_chunk_ids": ["2111.08600v1 (1).pdf_00010"],
+    "question_type": "comparative",
+    "answerable": true
+  },
+  {
+    "question_id": "q011",
+    "question": "What is the input and output of monocular depth estimation as described in the survey paper?",
+    "reference_answer": "The input is a single RGB image and the output is a dense depth map for each pixel.",
+    "relevant_chunk_ids": ["1901.09402v1 (1).pdf_00001"],
+    "question_type": "factual",
+    "answerable": true
+  },
+  {
+    "question_id": "q012",
+    "question": "Why is monocular depth estimation considered an ill-posed problem?",
+    "reference_answer": "Because a single 2D image does not uniquely determine 3D depth; many different scenes can produce the same image.",
+    "relevant_chunk_ids": ["1901.09402v1 (1).pdf_00001"],
+    "question_type": "factual",
+    "answerable": true
+  },
+  {
+    "question_id": "q013",
+    "question": "What is the main motivation for developing unsupervised monocular depth estimation methods?",
+    "reference_answer": "To avoid the need for expensive and hard-to-obtain ground truth depth labels while still learning depth from image data.",
+    "relevant_chunk_ids": ["1812.11671v1.pdf_00002"],
+    "question_type": "methodological",
+    "answerable": true
+  },
+  {
+    "question_id": "q014",
+    "question": "What kind of supervision signal do unsupervised methods rely on?",
+    "reference_answer": "They rely on photometric consistency and image reconstruction losses between real and synthesized views.",
+    "relevant_chunk_ids": ["1812.11671v1.pdf_00003"],
+    "question_type": "methodological",
+    "answerable": true
+  },
+  {
+    "question_id": "q015",
+    "question": "What is the core idea behind stereo-based depth estimation?",
+    "reference_answer": "It estimates depth by matching corresponding pixels or features across two images captured from different viewpoints.",
+    "relevant_chunk_ids": ["2006.02535v1.pdf_00001"],
+    "question_type": "factual",
+    "answerable": true
+  },
+  {
+    "question_id": "q016",
+    "question": "What is one major limitation of monocular depth estimation highlighted by the survey?",
+    "reference_answer": "It suffers from scale ambiguity and sensitivity to texture, structure, and occlusions in the scene.",
+    "relevant_chunk_ids": ["1901.09402v1 (1).pdf_00002"],
+    "question_type": "factual",
+    "answerable": true
+  },
+  {
+    "question_id": "q017",
+    "question": "What type of neural network is used in the monocular depth model from martins2018?",
+    "reference_answer": "A fully convolutional network derived from VGG and extended with deconvolutional layers.",
+    "relevant_chunk_ids": ["martins2018.pdf_00001"],
+    "question_type": "methodological",
+    "answerable": true
+  },
+  {
+    "question_id": "q018",
+    "question": "What kinds of visual cues are used by traditional handcrafted depth estimation methods?",
+    "reference_answer": "They use cues such as texture variations, occlusion boundaries, defocus, color or haze, surface layout, and object size.",
+    "relevant_chunk_ids": ["2111.08600v1 (1).pdf_00001"],
+    "question_type": "factual",
+    "answerable": true
+  },
+  {
+    "question_id": "q019",
+    "question": "Which depth estimation approach depends on two viewpoints rather than one?",
+    "reference_answer": "Stereo-based depth estimation depends on two viewpoints, typically from a stereo camera pair.",
+    "relevant_chunk_ids": ["2006.02535v1.pdf_00001"],
+    "question_type": "comparative",
+    "answerable": true
+  },
+  {
+    "question_id": "q020",
+    "question": "Which paper is a survey of monocular depth estimation methods?",
+    "reference_answer": "The survey paper by Amlaan Bhoi, titled Monocular Depth Estimation: A Survey.",
+    "relevant_chunk_ids": ["1901.09402v1 (1).pdf_00001"],
+    "question_type": "factual",
+    "answerable": true
+  },
+  {
+    "question_id": "q021",
+    "question": "What problem is the 1812.11671 paper primarily trying to solve?",
+    "reference_answer": "It addresses unsupervised monocular depth estimation using synthetic view consistency rather than supervised depth labels.",
+    "relevant_chunk_ids": ["1812.11671v1.pdf_00002"],
+    "question_type": "factual",
+    "answerable": true
+  },
+  {
+    "question_id": "q022",
+    "question": "What is the purpose of the right-view synthesis sub-task in the unsupervised approach?",
+    "reference_answer": "It helps generate a view from the opposite perspective and provides a training signal for depth/disparity estimation.",
+    "relevant_chunk_ids": ["1812.11671v1.pdf_00004"],
+    "question_type": "methodological",
+    "answerable": true
+  },
+  {
+    "question_id": "q023",
+    "question": "What advantage do semi-supervised methods offer over fully supervised ones?",
+    "reference_answer": "They can use a small amount of labeled data together with a larger unlabeled corpus, reducing annotation cost while improving generalization or accuracy.",
+    "relevant_chunk_ids": ["2111.08600v1 (1).pdf_00010"],
+    "question_type": "comparative",
+    "answerable": true
+  },
+  {
+    "question_id": "q024",
+    "question": "What applications are mentioned for dense depth estimation in the survey paper?",
+    "reference_answer": "Scene reconstruction, 3D object recognition, segmentation, and detection.",
+    "relevant_chunk_ids": ["1901.09402v1 (1).pdf_00001"],
+    "question_type": "factual",
+    "answerable": true
+  },
+  {
+    "question_id": "q025",
+    "question": "What real-time challenge is highlighted for future monocular depth estimation systems?",
+    "reference_answer": "Achieving real-time performance while maintaining accuracy and robustness.",
+    "relevant_chunk_ids": ["Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00020"],
+    "question_type": "factual",
+    "answerable": true
+  },
+  {
+    "question_id": "q026",
+    "question": "What is the main difference between supervised and unsupervised monocular depth estimation?",
+    "reference_answer": "Supervised methods use ground-truth depth labels during training, while unsupervised methods learn from view synthesis and photometric consistency.",
+    "relevant_chunk_ids": ["1812.11671v1.pdf_00002"],
+    "question_type": "comparative",
+    "answerable": true
+  },
+  {
+    "question_id": "q027",
+    "question": "What is one reason monocular depth estimation can be brittle in new scenes?",
+    "reference_answer": "It often depends strongly on the training data distribution and may fail to generalize well beyond it.",
+    "relevant_chunk_ids": ["Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00002"],
+    "question_type": "factual",
+    "answerable": true
+  },
+  {
+    "question_id": "q028",
+    "question": "What exact numerical performance metric is not provided in the current corpus for the 1812.11671 method?",
+    "reference_answer": null,
+    "relevant_chunk_ids": [],
+    "question_type": "corpus_absent",
+    "answerable": false
+  }
+]
