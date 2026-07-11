@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is the main limitation of monocular depth estimation compared to stereo methods?",
+    "answer": "The principal limitation of monocular depth estimation, when compared with stereo methods, is that the baseline between the viewpoints is unknown, which makes it difficult to recover absolute depth values. This ambiguity is a major challenge for monocular approaches and often requires additional sensors or learning‑based cues to estimate scale [2].  \n\n**References**  \n[2] martins2018.pdf, p. 1, “Fusion of stereo and still monocular depth estimates in a self‑supervised learning context”.",
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.9959
+  },
+  {
+    "question": "How does unsupervised monocular depth estimation avoid the need for ground truth depth data?",
+    "answer": "Unsupervised monocular depth estimation sidesteps the requirement for ground‑truth depth maps by turning the learning problem into an image‑reconstruction task.  \nThe network is trained to synth‑esize a second view (e.g., the right image) from a single left image and then to predict disparity/depth from the original and synthesized views. The only supervisory signal is an **image‑alignment (reconstruction) loss** that measures how well the predicted view matches the actual one, together with geometric consistency constraints between the two views. Because the loss is computed directly from the input images, no explicit depth labels are needed during training【1†L1-L9】【3†L1-L7】.",
+    "faithfulness": 0.8571,
+    "answer_relevancy": 0.9854
+  },
+  {
+    "question": "What two sub-problems does the paper 1812.11671 decompose monocular depth estimation into?",
+    "answer": "The paper treats monocular depth estimation as two separate sub‑problems:  \n\n1. **Right‑view synthesis** – generating a synthetic right image from the single left input.  \n2. **Stereo matching** – estimating disparity (and thus depth) from the concatenated left and synthesized right views.  \n\nThese two stages constitute the decomposition of the monocular depth estimation task in the paper 1812.11671【2†L1-L4】【5†L9-L12】.",
+    "faithfulness": 0.8333,
+    "answer_relevancy": 0.9577
+  },
+  {
+    "question": "What are the five main challenges for future monocular depth estimation methods identified in the thorough review paper?",
+    "answer": "The review identifies five principal challenges that future monocular depth‑estimation methods must address:\n\n1. **Integration and optimisation of network frameworks** – designing architectures that combine and fine‑tune different modules effectively.  \n2. **Dataset construction** – building larger, more diverse and well‑annotated training sets.  \n3. **Handling dynamic objects and occlusions** – robustly estimating depth in scenes with moving elements and hidden surfaces.  \n4. **Generating high‑resolution depth maps** – producing detailed depth predictions rather than coarse outputs.  \n5. **Achieving real‑time performance** – ensuring that the methods run fast enough for practical, on‑the‑fly applications.  \n\n**References**  \n[1] Monocular_Depth_Estimation_A_Thorough_Review, p. 2, Section R.",
+    "faithfulness": 0.9091,
+    "answer_relevancy": 0.9661
+  },
+  {
+    "question": "In what scenarios is stereo depth estimation more accurate than monocular estimation according to martins2018?",
+    "answer": "According to the experiments reported in martins2018, stereo vision provides higher depth‑estimation accuracy than monocular vision for the majority of the range of distances that were tested; the only exception is at very short (close‑by) distances, where monocular estimates can be comparatively better【1†L4-L7】.",
+    "faithfulness": 0.5,
+    "answer_relevancy": 0.907
+  },
+  {
+    "question": "What network architecture does martins2018 use for monocular depth estimation?",
+    "answer": "Martins 2018 builds on the “coarse‑to‑fine” encoder‑decoder design that has become standard for monocular depth prediction.  Specifically, the paper notes that most recent works (including the original Eigen et al. model) use **two or more stacked CNNs**, where a first network produces a global, low‑resolution depth map and one or more subsequent networks progressively refine this prediction at higher resolutions, incorporating local context and finer‑scale details【3】.",
+    "faithfulness": 0.8,
+    "answer_relevancy": 0.912
+  },
+  {
+    "question": "What visual cues do traditional handcrafted feature-based monocular depth estimation methods use?",
+    "answer": "Traditional handcrafted‑feature monocular depth estimation methods rely on a set of visual cues that can be extracted from a single image, including  \n\n* **Texture variations / texture gradients** – changes in texture that correlate with distance,  \n* **Occlusion boundaries** – edges where one surface blocks another,  \n* **Defocus (depth‑of‑field) cues**,  \n* **Color or haze cues** – atmospheric scattering that varies with depth,  \n* **Surface layout cues** – overall scene geometry, and  \n* **Known object size cues** – the expected size of familiar objects to infer distance.  \n\nThese cues are computed from over‑segmented superpixels and used in probabilistic models such as MRF/CRF to predict dense depth maps【1†L1-L7】【4†L1-L5】.  \n\n**References**  \n1. 2111.08600v1 (1).pdf, p. 5, Sec. D.  \n4. Monocular_Depth_Estimation_A_Thorough_Review (1).pdf, p. 1, Sec. R.",
+    "faithfulness": 0.4444,
+    "answer_relevancy": 0.9913
+  },
+  {
+    "question": "What semi-supervised methods are discussed in the thorough review paper and what advantage do they offer?",
+    "answer": "The review identifies **semi‑supervised monocular depth‑estimation methods** as approaches that combine a limited set of ground‑truth depth labels with a larger pool of unlabeled images. By doing so, they **retain much of the performance of fully supervised models while dramatically lowering the amount of manual annotation required**【1】.  \n\nOne concrete technique highlighted for semi‑supervised learning is the use of **image‑style translation (e.g., CycleGAN) to fuse synthetic images with real‑world data**, which supplies additional depth cues that pure unsupervised methods cannot obtain【4】. This integration of synthetic data **supplements missing depth information and improves accuracy without the need for extensive real‑world labeling**【4】.",
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.6569
+  },
+  {
+    "question": "What is the input and output of monocular depth estimation as described in the survey paper?",
+    "answer": "The survey defines monocular depth estimation as taking **a single RGB image** as the input and producing **a dense depth map** (i.e., a per‑pixel depth value) as the output [1].  \n\n**References**  \n[1] 1901.09402v1, p. 1, Section “Monocular Depth Estimation: A Survey”.",
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.8914
+  },
+  {
+    "question": "Why is monocular depth estimation considered an ill-posed problem?",
+    "answer": "Monocular depth estimation is called an ill‑posed problem because a single 2‑D image does not contain enough geometric information to determine a unique 3‑D scene. The same image can be generated by infinitely many different depth configurations, so depth cannot be inferred unambiguously from one view alone. Consequently, estimating depth from a single picture is geometrically ambiguous and requires the model to rely on learned cues (e.g., perspective, object size, texture) to resolve this ambiguity【1†L1-L5】【3†L9-L13】.  \n\n**References**  \n1. 1812.11671v1.pdf, p. 1, Section “Unsupervised monocular stereo matching”.  \n3. 1901.09402v1 (1).pdf, p. 1, Section “Monocular Depth Estimation: A Survey”.",
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.9973
+  },
+  {
+    "question": "What is the main motivation for developing unsupervised monocular depth estimation methods?",
+    "answer": "The primary motivation for developing unsupervised monocular depth‑estimation methods is to avoid the costly and labor‑intensive requirement of large amounts of accurate ground‑truth depth data. Collecting such labeled datasets is difficult, so researchers seek unsupervised approaches that can learn depth from raw video or image sequences without explicit depth supervision【1†L2-L5】【2†L4-L7】.  \n\n**References**  \n1. sensors-22-05353.pdf, p. 15.  \n2. 1812.11671v1.pdf, p. 1.",
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.9949
+  },
+  {
+    "question": "What kind of supervision signal do unsupervised methods rely on?",
+    "answer": "Unsupervised depth‑estimation methods do not use ground‑truth depth maps; instead they generate their own supervisory signal by treating depth prediction as an image‑reconstruction problem.  They exploit geometric constraints between views (e.g., stereo pairs or consecutive video frames) and train the network to minimise a photometric/re‑projection error that measures how well a pixel from a target view can be warped into a source view using the predicted depth and pose [1][2].",
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.6803
+  },
+  {
+    "question": "What is the core idea behind stereo-based depth estimation?",
+    "answer": "Stereo‑based depth estimation works by exploiting two (or more) spatially separated cameras to capture the same scene and then **matching corresponding pixels (or features) across the multiple images**. By finding where the same point appears in each view and using the known camera geometry, the disparity between the matched locations can be converted into a depth value for that point in the scene【4†L1-L4】.",
+    "faithfulness": 0.6,
+    "answer_relevancy": 0.9361
+  },
+  {
+    "question": "What is one major limitation of monocular depth estimation highlighted by the survey?",
+    "answer": "One major limitation emphasized in the survey is that monocular depth‑estimation methods are fundamentally data‑driven and therefore depend heavily on the training data; this can lead to poor generalisation to new or complex scenes and to ambiguities in situations such as optical‑illusion, reflective or translucent objects【3】.  \n\n**References**  \n[3] Monocular_Depth_Estimation_A_Thorough_Review (1).pdf, p. 15.",
+    "faithfulness": 0.75,
+    "answer_relevancy": 0.9727
+  },
+  {
+    "question": "What type of neural network is used in the monocular depth model from martins2018?",
+    "answer": "The monocular depth model in martins2018 uses a very light‑weight **convolutional neural network (CNN)** – specifically, only the coarse‑scale network from Ivanecky’s CNN architecture [1].  \n\n**References**  \n[1] martins2018.pdf, p. 5.",
+    "faithfulness": 0.3333,
+    "answer_relevancy": 0.9921
+  },
+  {
+    "question": "What kinds of visual cues are used by traditional handcrafted depth estimation methods?",
+    "answer": "Traditional handcrafted monocular depth‑estimation methods rely on a variety of visual cues that can be extracted directly from a single image.  \nThe cues mentioned in the literature include  \n\n* **Texture cues** – variations and gradients of texture across the image.  \n* **Occlusion cues** – boundaries where one surface blocks another.  \n* **Defocus / focus cues** – blur or sharpness differences caused by depth‑dependent focus.  \n* **Color / haze cues** – atmospheric scattering or color attenuation that varies with distance.  \n* **Surface layout cues** – overall scene geometry such as perspective lines.  \n* **Known object size cues** – using the expected physical size of familiar objects.  \n* **Location cues** – the image position of regions (e.g., lower parts of the image tend to be nearer).  \n* **Motion cues** – motion parallax when multiple frames are available.  \n* **Geometric‑context cues** – relationships among super‑pixels that capture shape and spatial arrangement.\n\nThese cues are combined after over‑segmenting the image into super‑pixels and computing color, texture, motion and geometric‑context features for each region.  \n\n**References**  \n[1] 2111.08600v1, p. 5 – lists texture variations, occlusion boundaries, defocus, color/haze, surface layout and size of known objects, and mentions color, location, texture, motion and geometric‑context features.  \n[2] Monocular_Depth_Estimation_A_Thorough_Review, p. 1 – enumerates texture variations, texture gradients, haze, relative object sizes, occlusions, motion parallax and focus as depth cues.",
+    "faithfulness": 0.9091,
+    "answer_relevancy": 0.9564
+  },
+  {
+    "question": "Which depth estimation approach depends on two viewpoints rather than one?",
+    "answer": "The depth‑estimation approach that relies on two viewpoints is **stereo vision**, which uses a pair of cameras (or two views) to triangulate depth — its performance depends on the geometry of the two cameras and the baseline between them【4†L1-L4】【1†L9-L12】.",
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.9607
+  },
+  {
+    "question": "Which paper is a survey of monocular depth estimation methods?",
+    "answer": "The paper titled **“Monocular Depth Estimation: A Survey”** (by Amlaan Bhoi) is a survey of monocular depth estimation methods【3】.  \n\n**References**  \n[3] Source: 1901.09402v1 (1).pdf, Page 1, Section: Monocular Depth Estimation: A Survey.",
+    "faithfulness": 0.6667,
+    "answer_relevancy": 0.8679
+  },
+  {
+    "question": "What problem is the 1812.11671 paper primarily trying to solve?",
+    "answer": "The provided context does not contain sufficient information to answer this question.",
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0
+  },
+  {
+    "question": "What is the purpose of the right-view synthesis sub-task in the unsupervised approach?",
+    "answer": "The right‑view synthesis sub‑task is used to generate a synthetic right image from the single left input. By creating this counterpart view, the method can then feed the concatenated left‑and‑synthesized‑right images to a stereo‑matching network, allowing depth (disparity) to be estimated with explicit geometric constraints rather than regressing depth directly from a single image【1†L1-L4】【3†L9-L13】.",
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.9022
+  },
+  {
+    "question": "What advantage do semi-supervised methods offer over fully supervised ones?",
+    "answer": "Semi‑supervised approaches combine a modest amount of ground‑truth depth labels with a much larger pool of unlabeled images.  By doing so they can attain performance that is close to fully supervised methods while dramatically lowering the amount of costly manual annotation required — the small labeled set supplies the necessary supervision, and the abundant unlabeled data boosts accuracy without the full labeling burden【1†L4-L9】.  This balance makes semi‑supervised training attractive when annotation resources are limited.  \n\n**References**  \n[1] Monocular_Depth_Estimation_A_Thorough_Review (1).pdf, p. 6, Section R.",
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7718
+  },
+  {
+    "question": "What applications are mentioned for dense depth estimation in the survey paper?",
+    "answer": "The survey notes that dense depth estimation is applied in autonomous‑driving / self‑driving vehicle systems and in medical imaging applications【3†L5-L9】【2†L1-L4】.",
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.9606
+  },
+  {
+    "question": "What real-time challenge is highlighted for future monocular depth estimation systems?",
+    "answer": "Future monocular depth‑estimation systems must overcome the difficulty of attaining **real‑time performance (real‑time inference)**, which is identified as a key challenge for upcoming methods【2†L1-L4】.",
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.9774
+  },
+  {
+    "question": "What is the main difference between supervised and unsupervised monocular depth estimation?",
+    "answer": "The key distinction is how the training signal is obtained.  \n* **Supervised monocular depth estimation** learns directly from explicit ground‑truth depth maps that have been labeled for each image.  \n* **Unsupervised monocular depth estimation** does not use any ground‑truth depth; instead it trains the network by minimizing image‑reconstruction losses (e.g., synthesizing a right view from a left view) or other geometric constraints, thereby avoiding the need for costly depth labeling【1†L1-L4】【2†L1-L5】.",
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.9877
+  },
+  {
+    "question": "What is one reason monocular depth estimation can be brittle in new scenes?",
+    "answer": "Monocular depth estimation can be brittle in new scenes because data‑driven methods depend heavily on the training data; if the training set does not cover the diversity of real‑world environments, the model may fail to generalize to previously unseen or more complex scenes【3†L9-L13】.  \n\n**References**  \n- Monocular_Depth_Estimation_A_Thorough_Review (1).pdf, p. 15.",
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.983
+  }
+]
