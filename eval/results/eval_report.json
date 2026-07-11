@@ -1,1 +1,2234 @@
-{}
+{
+  "generated_at": "2026-07-11T15:42:08.673595",
+  "retrieval": {
+    "dense_only": {
+      "config": "dense_only",
+      "aggregate": {
+        "Recall@1": 0.4,
+        "Recall@3": 0.56,
+        "Recall@5": 0.6,
+        "MRR": 0.4961,
+        "n_evaluated": 25,
+        "n_skipped": 3
+      },
+      "per_question": [
+        {
+          "question_id": "q001",
+          "question": "What is the main limitation of monocular depth estimation compared to stereo methods?",
+          "relevant_ids": [
+            "martins2018.pdf_00390"
+          ],
+          "retrieved_ids": [
+            "martins2018.pdf_00390",
+            "martins2018.pdf_00400",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "martins2018.pdf_00401",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00446",
+            "1901.09402v1 (1).pdf_00045",
+            "martins2018.pdf_00411",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00443",
+            "martins2018.pdf_00389",
+            "2006.02535v1.pdf_00079",
+            "1812.11671v1.pdf_00007",
+            "1812.11671v1.pdf_00002",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00488",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00426",
+            "luo2018.pdf_00349"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q002",
+          "question": "How does unsupervised monocular depth estimation avoid the need for ground truth depth data?",
+          "relevant_ids": [
+            "1812.11671v1.pdf_00003",
+            "1812.11671v1.pdf_00004"
+          ],
+          "retrieved_ids": [
+            "martins2018.pdf_00394",
+            "1812.11671v1.pdf_00003",
+            "2111.08600v1 (1).pdf_00278",
+            "1812.11671v1.pdf_00000",
+            "1812.11671v1.pdf_00004",
+            "1901.09402v1 (1).pdf_00071",
+            "2111.08600v1 (1).pdf_00264",
+            "1812.11671v1.pdf_00002",
+            "2006.02535v1.pdf_00165",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00446",
+            "martins2018.pdf_00395",
+            "sensors-22-05353.pdf_00569",
+            "luo2018.pdf_00353",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00443",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00461"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.5
+        },
+        {
+          "question_id": "q003",
+          "question": "What two sub-problems does the paper 1812.11671 decompose monocular depth estimation into?",
+          "relevant_ids": [
+            "1812.11671v1.pdf_00004"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00422",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00443",
+            "1901.09402v1 (1).pdf_00045",
+            "1901.09402v1 (1).pdf_00044",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00488",
+            "sensors-22-05353.pdf_00527",
+            "martins2018.pdf_00390",
+            "martins2018.pdf_00411",
+            "2111.08600v1 (1).pdf_00228",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00424",
+            "martins2018.pdf_00401",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00482",
+            "martins2018.pdf_00415",
+            "2111.08600v1 (1).pdf_00232"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q004",
+          "question": "What are the five main challenges for future monocular depth estimation methods identified in the thorough review paper?",
+          "relevant_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00427",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00443",
+            "sensors-22-05353.pdf_00525",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00488",
+            "2006.02535v1.pdf_00188",
+            "2111.08600v1 (1).pdf_00248",
+            "sensors-22-05353.pdf_00529",
+            "2111.08600v1 (1).pdf_00228",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491",
+            "2111.08600v1 (1).pdf_00230",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00486",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00447",
+            "martins2018.pdf_00401",
+            "2111.08600v1 (1).pdf_00229"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q005",
+          "question": "In what scenarios is stereo depth estimation more accurate than monocular estimation according to martins2018?",
+          "relevant_ids": [
+            "martins2018.pdf_00415"
+          ],
+          "retrieved_ids": [
+            "martins2018.pdf_00415",
+            "martins2018.pdf_00407",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00488",
+            "martins2018.pdf_00390",
+            "1812.11671v1.pdf_00031",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "luo2018.pdf_00378",
+            "2006.02535v1.pdf_00093",
+            "martins2018.pdf_00400",
+            "martins2018.pdf_00396",
+            "2006.02535v1.pdf_00079",
+            "1812.11671v1.pdf_00004",
+            "martins2018.pdf_00405",
+            "martins2018.pdf_00388",
+            "1812.11671v1.pdf_00011"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q006",
+          "question": "What network architecture does martins2018 use for monocular depth estimation?",
+          "relevant_ids": [
+            "martins2018.pdf_00401"
+          ],
+          "retrieved_ids": [
+            "1901.09402v1 (1).pdf_00068",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "2006.02535v1.pdf_00176",
+            "2111.08600v1 (1).pdf_00275",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00473",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00488",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00427",
+            "2111.08600v1 (1).pdf_00263",
+            "martins2018.pdf_00393",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00476",
+            "1812.11671v1.pdf_00007",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00482",
+            "luo2018.pdf_00356",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00471",
+            "1901.09402v1 (1).pdf_00066"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q007",
+          "question": "What visual cues do traditional handcrafted feature-based monocular depth estimation methods use?",
+          "relevant_ids": [
+            "2111.08600v1 (1).pdf_00242"
+          ],
+          "retrieved_ids": [
+            "2111.08600v1 (1).pdf_00242",
+            "2111.08600v1 (1).pdf_00248",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00426",
+            "1901.09402v1 (1).pdf_00046",
+            "martins2018.pdf_00395",
+            "1901.09402v1 (1).pdf_00045",
+            "2111.08600v1 (1).pdf_00228",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00486",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00430",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00443",
+            "martins2018.pdf_00390",
+            "martins2018.pdf_00392",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00433",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00490"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q010",
+          "question": "What semi-supervised methods are discussed in the thorough review paper and what advantage do they offer?",
+          "relevant_ids": [
+            "2111.08600v1 (1).pdf_00315"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00445",
+            "sensors-22-05353.pdf_00563",
+            "2111.08600v1 (1).pdf_00300",
+            "sensors-22-05353.pdf_00569",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00446",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00488",
+            "2111.08600v1 (1).pdf_00279",
+            "sensors-22-05353.pdf_00531",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00444",
+            "2111.08600v1 (1).pdf_00280",
+            "2111.08600v1 (1).pdf_00315",
+            "2006.02535v1.pdf_00108",
+            "2111.08600v1 (1).pdf_00248",
+            "2111.08600v1 (1).pdf_00278",
+            "2006.02535v1.pdf_00159"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.09090909090909091
+        },
+        {
+          "question_id": "q011",
+          "question": "What is the input and output of monocular depth estimation as described in the survey paper?",
+          "relevant_ids": [
+            "1901.09402v1 (1).pdf_00044"
+          ],
+          "retrieved_ids": [
+            "1901.09402v1 (1).pdf_00068",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00443",
+            "sensors-22-05353.pdf_00533",
+            "2111.08600v1 (1).pdf_00226",
+            "1812.11671v1.pdf_00031",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00422",
+            "sensors-22-05353.pdf_00532",
+            "1901.09402v1 (1).pdf_00044",
+            "2111.08600v1 (1).pdf_00230",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "martins2018.pdf_00396",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00488",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00463",
+            "sensors-22-05353.pdf_00525",
+            "1901.09402v1 (1).pdf_00045"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.125
+        },
+        {
+          "question_id": "q012",
+          "question": "Why is monocular depth estimation considered an ill-posed problem?",
+          "relevant_ids": [
+            "luo2018.pdf_00349",
+            "1901.09402v1 (1).pdf_00045"
+          ],
+          "retrieved_ids": [
+            "1901.09402v1 (1).pdf_00045",
+            "luo2018.pdf_00349",
+            "martins2018.pdf_00401",
+            "1812.11671v1.pdf_00002",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00446",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00427",
+            "martins2018.pdf_00390",
+            "2111.08600v1 (1).pdf_00229",
+            "martins2018.pdf_00405",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00424",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00444",
+            "1901.09402v1 (1).pdf_00044",
+            "2111.08600v1 (1).pdf_00258",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "1812.11671v1.pdf_00007"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q013",
+          "question": "What is the main motivation for developing unsupervised monocular depth estimation methods?",
+          "relevant_ids": [
+            "1812.11671v1.pdf_00003"
+          ],
+          "retrieved_ids": [
+            "martins2018.pdf_00395",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00461",
+            "1812.11671v1.pdf_00004",
+            "1812.11671v1.pdf_00001",
+            "1812.11671v1.pdf_00000",
+            "2111.08600v1 (1).pdf_00248",
+            "sensors-22-05353.pdf_00527",
+            "1901.09402v1 (1).pdf_00045",
+            "1812.11671v1.pdf_00003",
+            "2111.08600v1 (1).pdf_00278",
+            "2111.08600v1 (1).pdf_00283",
+            "martins2018.pdf_00398",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00446",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00486"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.1111111111111111
+        },
+        {
+          "question_id": "q014",
+          "question": "What kind of supervision signal do unsupervised methods rely on?",
+          "relevant_ids": [
+            "2111.08600v1 (1).pdf_00280"
+          ],
+          "retrieved_ids": [
+            "2006.02535v1.pdf_00159",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00461",
+            "martins2018.pdf_00395",
+            "martins2018.pdf_00398",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00445",
+            "2111.08600v1 (1).pdf_00279",
+            "2111.08600v1 (1).pdf_00280",
+            "2111.08600v1 (1).pdf_00278",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00446",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00444",
+            "martins2018.pdf_00397",
+            "sensors-22-05353.pdf_00569",
+            "sensors-22-05353.pdf_00531",
+            "2111.08600v1 (1).pdf_00248",
+            "1812.11671v1.pdf_00033"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.14285714285714285
+        },
+        {
+          "question_id": "q015",
+          "question": "What is the core idea behind stereo-based depth estimation?",
+          "relevant_ids": [
+            "2006.02535v1.pdf_00079",
+            "1812.11671v1.pdf_00002"
+          ],
+          "retrieved_ids": [
+            "2006.02535v1.pdf_00079",
+            "2006.02535v1.pdf_00077",
+            "2006.02535v1.pdf_00078",
+            "1812.11671v1.pdf_00002",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "2006.02535v1.pdf_00081",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00426",
+            "1901.09402v1 (1).pdf_00045",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00424",
+            "2111.08600v1 (1).pdf_00242",
+            "1812.11671v1.pdf_00007",
+            "2006.02535v1.pdf_00083",
+            "1812.11671v1.pdf_00005",
+            "1812.11671v1.pdf_00001",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00430"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q016",
+          "question": "What is one major limitation of monocular depth estimation highlighted by the survey?",
+          "relevant_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491"
+          ],
+          "retrieved_ids": [
+            "martins2018.pdf_00411",
+            "martins2018.pdf_00401",
+            "1901.09402v1 (1).pdf_00045",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00443",
+            "martins2018.pdf_00400",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00435",
+            "martins2018.pdf_00390",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "sensors-22-05353.pdf_00533",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00446",
+            "1901.09402v1 (1).pdf_00044",
+            "martins2018.pdf_00389",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00426",
+            "2111.08600v1 (1).pdf_00303"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.16666666666666666
+        },
+        {
+          "question_id": "q017",
+          "question": "What type of neural network is used in the monocular depth model from martins2018?",
+          "relevant_ids": [
+            "martins2018.pdf_00401",
+            "martins2018.pdf_00390"
+          ],
+          "retrieved_ids": [
+            "1901.09402v1 (1).pdf_00068",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00447",
+            "sensors-22-05353.pdf_00551",
+            "2006.02535v1.pdf_00160",
+            "sensors-22-05353.pdf_00525",
+            "martins2018.pdf_00393",
+            "2111.08600v1 (1).pdf_00328",
+            "2111.08600v1 (1).pdf_00263",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "1812.11671v1.pdf_00007",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00455",
+            "2111.08600v1 (1).pdf_00284",
+            "sensors-22-05353.pdf_00583",
+            "1901.09402v1 (1).pdf_00066",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00449"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q018",
+          "question": "What kinds of visual cues are used by traditional handcrafted depth estimation methods?",
+          "relevant_ids": [
+            "2111.08600v1 (1).pdf_00242"
+          ],
+          "retrieved_ids": [
+            "2111.08600v1 (1).pdf_00242",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00426",
+            "2111.08600v1 (1).pdf_00248",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00430",
+            "martins2018.pdf_00395",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00433",
+            "2111.08600v1 (1).pdf_00234",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00490",
+            "sensors-22-05353.pdf_00529",
+            "1901.09402v1 (1).pdf_00046",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00436",
+            "2006.02535v1.pdf_00166",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00443",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00479",
+            "1901.09402v1 (1).pdf_00045"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q019",
+          "question": "Which depth estimation approach depends on two viewpoints rather than one?",
+          "relevant_ids": [
+            "martins2018.pdf_00389",
+            "2006.02535v1.pdf_00079"
+          ],
+          "retrieved_ids": [
+            "martins2018.pdf_00390",
+            "martins2018.pdf_00400",
+            "martins2018.pdf_00395",
+            "2006.02535v1.pdf_00083",
+            "martins2018.pdf_00389",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00446",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00433",
+            "2006.02535v1.pdf_00132",
+            "martins2018.pdf_00396",
+            "1901.09402v1 (1).pdf_00045",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00426",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00488",
+            "1812.11671v1.pdf_00002",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00479",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00424"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.2
+        },
+        {
+          "question_id": "q020",
+          "question": "Which paper is a survey of monocular depth estimation methods?",
+          "relevant_ids": [
+            "1901.09402v1 (1).pdf_00044",
+            "2111.08600v1 (1).pdf_00228"
+          ],
+          "retrieved_ids": [
+            "1901.09402v1 (1).pdf_00044",
+            "2111.08600v1 (1).pdf_00234",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00486",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00488",
+            "2111.08600v1 (1).pdf_00230",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00422",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "1901.09402v1 (1).pdf_00068",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00427",
+            "2111.08600v1 (1).pdf_00228",
+            "sensors-22-05353.pdf_00525",
+            "1901.09402v1 (1).pdf_00045",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00443",
+            "2006.02535v1.pdf_00081",
+            "2006.02535v1.pdf_00077"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q021",
+          "question": "What problem is the 1812.11671 paper primarily trying to solve?",
+          "relevant_ids": [
+            "1812.11671v1.pdf_00002",
+            "1812.11671v1.pdf_00000"
+          ],
+          "retrieved_ids": [
+            "1901.09402v1 (1).pdf_00070",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00421",
+            "2006.02535v1.pdf_00159",
+            "martins2018.pdf_00412",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00523",
+            "2111.08600v1 (1).pdf_00290",
+            "2111.08600v1 (1).pdf_00277",
+            "2111.08600v1 (1).pdf_00225",
+            "sensors-22-05353.pdf_00548",
+            "1812.11671v1.pdf_00032",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00439",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00448",
+            "2006.02535v1.pdf_00113",
+            "sensors-22-05353.pdf_00532",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00462"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q022",
+          "question": "What is the purpose of the right-view synthesis sub-task in the unsupervised approach?",
+          "relevant_ids": [
+            "1812.11671v1.pdf_00003",
+            "1812.11671v1.pdf_00004"
+          ],
+          "retrieved_ids": [
+            "1812.11671v1.pdf_00003",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00461",
+            "luo2018.pdf_00354",
+            "1812.11671v1.pdf_00012",
+            "1812.11671v1.pdf_00037",
+            "1812.11671v1.pdf_00010",
+            "martins2018.pdf_00395",
+            "luo2018.pdf_00365",
+            "1812.11671v1.pdf_00001",
+            "1812.11671v1.pdf_00013",
+            "1812.11671v1.pdf_00009",
+            "1812.11671v1.pdf_00004",
+            "luo2018.pdf_00372",
+            "luo2018.pdf_00355",
+            "sensors-22-05353.pdf_00560"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q023",
+          "question": "What advantage do semi-supervised methods offer over fully supervised ones?",
+          "relevant_ids": [
+            "2111.08600v1 (1).pdf_00315"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00445",
+            "sensors-22-05353.pdf_00569",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00446",
+            "sensors-22-05353.pdf_00563",
+            "2111.08600v1 (1).pdf_00300",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00444",
+            "sensors-22-05353.pdf_00531",
+            "2111.08600v1 (1).pdf_00301",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00488",
+            "2111.08600v1 (1).pdf_00279",
+            "2111.08600v1 (1).pdf_00278",
+            "2111.08600v1 (1).pdf_00283",
+            "2006.02535v1.pdf_00108",
+            "2111.08600v1 (1).pdf_00280",
+            "2111.08600v1 (1).pdf_00315"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.06666666666666667
+        },
+        {
+          "question_id": "q024",
+          "question": "What applications are mentioned for dense depth estimation in the survey paper?",
+          "relevant_ids": [
+            "2111.08600v1 (1).pdf_00228"
+          ],
+          "retrieved_ids": [
+            "2111.08600v1 (1).pdf_00234",
+            "2111.08600v1 (1).pdf_00235",
+            "2111.08600v1 (1).pdf_00228",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00443",
+            "sensors-22-05353.pdf_00532",
+            "2006.02535v1.pdf_00078",
+            "2111.08600v1 (1).pdf_00230",
+            "martins2018.pdf_00394",
+            "sensors-22-05353.pdf_00533",
+            "2006.02535v1.pdf_00199",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00438",
+            "1901.09402v1 (1).pdf_00044",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00486",
+            "2006.02535v1.pdf_00077",
+            "sensors-22-05353.pdf_00527"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.3333333333333333
+        },
+        {
+          "question_id": "q025",
+          "question": "What real-time challenge is highlighted for future monocular depth estimation systems?",
+          "relevant_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00427",
+            "sensors-22-05353.pdf_00525",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00422",
+            "1901.09402v1 (1).pdf_00044",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00443",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00473",
+            "2111.08600v1 (1).pdf_00304",
+            "martins2018.pdf_00392",
+            "luo2018.pdf_00348",
+            "martins2018.pdf_00390",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491",
+            "1812.11671v1.pdf_00002",
+            "2111.08600v1 (1).pdf_00302",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00482"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q026",
+          "question": "What is the main difference between supervised and unsupervised monocular depth estimation?",
+          "relevant_ids": [
+            "sensors-22-05353.pdf_00569",
+            "1812.11671v1.pdf_00004"
+          ],
+          "retrieved_ids": [
+            "martins2018.pdf_00395",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00488",
+            "1812.11671v1.pdf_00004",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00461",
+            "2111.08600v1 (1).pdf_00288",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00446",
+            "2111.08600v1 (1).pdf_00248",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00445",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00444",
+            "1812.11671v1.pdf_00000",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00449",
+            "sensors-22-05353.pdf_00569",
+            "1812.11671v1.pdf_00033",
+            "2111.08600v1 (1).pdf_00283",
+            "1812.11671v1.pdf_00011"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.3333333333333333
+        },
+        {
+          "question_id": "q027",
+          "question": "What is one reason monocular depth estimation can be brittle in new scenes?",
+          "relevant_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491"
+          ],
+          "retrieved_ids": [
+            "martins2018.pdf_00400",
+            "1901.09402v1 (1).pdf_00045",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491",
+            "martins2018.pdf_00390",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00479",
+            "martins2018.pdf_00396",
+            "martins2018.pdf_00411",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00443",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00426",
+            "1812.11671v1.pdf_00002",
+            "martins2018.pdf_00401",
+            "martins2018.pdf_00415",
+            "2006.02535v1.pdf_00198",
+            "martins2018.pdf_00405",
+            "martins2018.pdf_00403"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.3333333333333333
+        }
+      ]
+    },
+    "sparse_only": {
+      "config": "sparse_only",
+      "aggregate": {
+        "Recall@1": 0.2,
+        "Recall@3": 0.28,
+        "Recall@5": 0.4,
+        "MRR": 0.2958,
+        "n_evaluated": 25,
+        "n_skipped": 3
+      },
+      "per_question": [
+        {
+          "question_id": "q001",
+          "question": "What is the main limitation of monocular depth estimation compared to stereo methods?",
+          "relevant_ids": [
+            "martins2018.pdf_00390"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "2111.08600v1 (1).pdf_00315",
+            "martins2018.pdf_00390",
+            "2111.08600v1 (1).pdf_00255",
+            "2006.02535v1.pdf_00176",
+            "sensors-22-05353.pdf_00537",
+            "sensors-22-05353.pdf_00575",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00460",
+            "sensors-22-05353.pdf_00530",
+            "2006.02535v1.pdf_00154",
+            "2111.08600v1 (1).pdf_00258",
+            "martins2018.pdf_00410",
+            "2111.08600v1 (1).pdf_00229",
+            "sensors-22-05353.pdf_00541"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.25
+        },
+        {
+          "question_id": "q002",
+          "question": "How does unsupervised monocular depth estimation avoid the need for ground truth depth data?",
+          "relevant_ids": [
+            "1812.11671v1.pdf_00003",
+            "1812.11671v1.pdf_00004"
+          ],
+          "retrieved_ids": [
+            "1812.11671v1.pdf_00002",
+            "1812.11671v1.pdf_00003",
+            "1812.11671v1.pdf_00000",
+            "1812.11671v1.pdf_00009",
+            "1812.11671v1.pdf_00037",
+            "1812.11671v1.pdf_00010",
+            "1812.11671v1.pdf_00038",
+            "2006.02535v1.pdf_00176",
+            "1812.11671v1.pdf_00033",
+            "1812.11671v1.pdf_00013",
+            "sensors-22-05353.pdf_00579",
+            "1812.11671v1.pdf_00012",
+            "1812.11671v1.pdf_00008",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00484",
+            "sensors-22-05353.pdf_00557"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.5
+        },
+        {
+          "question_id": "q003",
+          "question": "What two sub-problems does the paper 1812.11671 decompose monocular depth estimation into?",
+          "relevant_ids": [
+            "1812.11671v1.pdf_00004"
+          ],
+          "retrieved_ids": [
+            "1812.11671v1.pdf_00003",
+            "2111.08600v1 (1).pdf_00230",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "1812.11671v1.pdf_00009",
+            "luo2018.pdf_00355",
+            "luo2018.pdf_00354",
+            "2111.08600v1 (1).pdf_00261",
+            "2111.08600v1 (1).pdf_00315",
+            "2006.02535v1.pdf_00078",
+            "luo2018.pdf_00347",
+            "2111.08600v1 (1).pdf_00231",
+            "1901.09402v1 (1).pdf_00068",
+            "luo2018.pdf_00365",
+            "luo2018.pdf_00348",
+            "2111.08600v1 (1).pdf_00245"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q004",
+          "question": "What are the five main challenges for future monocular depth estimation methods identified in the thorough review paper?",
+          "relevant_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00427",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00493",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00470",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491",
+            "2006.02535v1.pdf_00078",
+            "martins2018.pdf_00415",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00488",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00426",
+            "martins2018.pdf_00410",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00482",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00443",
+            "2111.08600v1 (1).pdf_00315",
+            "sensors-22-05353.pdf_00577",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00435"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q005",
+          "question": "In what scenarios is stereo depth estimation more accurate than monocular estimation according to martins2018?",
+          "relevant_ids": [
+            "martins2018.pdf_00415"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491",
+            "2111.08600v1 (1).pdf_00315",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00437",
+            "1812.11671v1.pdf_00004",
+            "martins2018.pdf_00399",
+            "2111.08600v1 (1).pdf_00299",
+            "2111.08600v1 (1).pdf_00304",
+            "martins2018.pdf_00415",
+            "1812.11671v1.pdf_00000",
+            "2006.02535v1.pdf_00077",
+            "martins2018.pdf_00410",
+            "1812.11671v1.pdf_00012",
+            "2006.02535v1.pdf_00081",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00446",
+            "martins2018.pdf_00389"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.125
+        },
+        {
+          "question_id": "q006",
+          "question": "What network architecture does martins2018 use for monocular depth estimation?",
+          "relevant_ids": [
+            "martins2018.pdf_00401"
+          ],
+          "retrieved_ids": [
+            "2111.08600v1 (1).pdf_00315",
+            "sensors-22-05353.pdf_00558",
+            "2006.02535v1.pdf_00176",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "2006.02535v1.pdf_00078",
+            "martins2018.pdf_00410",
+            "1901.09402v1 (1).pdf_00071",
+            "1901.09402v1 (1).pdf_00061",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00437",
+            "martins2018.pdf_00393",
+            "1812.11671v1.pdf_00003",
+            "1901.09402v1 (1).pdf_00068",
+            "2111.08600v1 (1).pdf_00311",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00450",
+            "sensors-22-05353.pdf_00536"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q007",
+          "question": "What visual cues do traditional handcrafted feature-based monocular depth estimation methods use?",
+          "relevant_ids": [
+            "2111.08600v1 (1).pdf_00242"
+          ],
+          "retrieved_ids": [
+            "2111.08600v1 (1).pdf_00228",
+            "2111.08600v1 (1).pdf_00311",
+            "2111.08600v1 (1).pdf_00230",
+            "2111.08600v1 (1).pdf_00242",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00426",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00436",
+            "2111.08600v1 (1).pdf_00312",
+            "sensors-22-05353.pdf_00529",
+            "2111.08600v1 (1).pdf_00231",
+            "2111.08600v1 (1).pdf_00315",
+            "2006.02535v1.pdf_00077",
+            "2006.02535v1.pdf_00176",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00515",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.25
+        },
+        {
+          "question_id": "q010",
+          "question": "What semi-supervised methods are discussed in the thorough review paper and what advantage do they offer?",
+          "relevant_ids": [
+            "2111.08600v1 (1).pdf_00315"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00429",
+            "sensors-22-05353.pdf_00531",
+            "2111.08600v1 (1).pdf_00315",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00427",
+            "2006.02535v1.pdf_00078",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00489",
+            "2111.08600v1 (1).pdf_00231",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491",
+            "2111.08600v1 (1).pdf_00230",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00430",
+            "sensors-22-05353.pdf_00577",
+            "2006.02535v1.pdf_00077",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00437",
+            "2111.08600v1 (1).pdf_00283"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.25
+        },
+        {
+          "question_id": "q011",
+          "question": "What is the input and output of monocular depth estimation as described in the survey paper?",
+          "relevant_ids": [
+            "1901.09402v1 (1).pdf_00044"
+          ],
+          "retrieved_ids": [
+            "1812.11671v1.pdf_00012",
+            "2006.02535v1.pdf_00115",
+            "sensors-22-05353.pdf_00533",
+            "2006.02535v1.pdf_00077",
+            "2111.08600v1 (1).pdf_00315",
+            "1812.11671v1.pdf_00036",
+            "1812.11671v1.pdf_00033",
+            "2111.08600v1 (1).pdf_00261",
+            "1812.11671v1.pdf_00037",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00446",
+            "2006.02535v1.pdf_00105",
+            "2111.08600v1 (1).pdf_00265",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00431",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00437"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q012",
+          "question": "Why is monocular depth estimation considered an ill-posed problem?",
+          "relevant_ids": [
+            "luo2018.pdf_00349",
+            "1901.09402v1 (1).pdf_00045"
+          ],
+          "retrieved_ids": [
+            "luo2018.pdf_00349",
+            "1812.11671v1.pdf_00002",
+            "martins2018.pdf_00416",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00441",
+            "2111.08600v1 (1).pdf_00231",
+            "2006.02535v1.pdf_00078",
+            "luo2018.pdf_00348",
+            "martins2018.pdf_00389",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00434",
+            "1901.09402v1 (1).pdf_00045",
+            "2111.08600v1 (1).pdf_00227",
+            "sensors-22-05353.pdf_00525",
+            "martins2018.pdf_00395",
+            "2111.08600v1 (1).pdf_00240",
+            "martins2018.pdf_00388"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q013",
+          "question": "What is the main motivation for developing unsupervised monocular depth estimation methods?",
+          "relevant_ids": [
+            "1812.11671v1.pdf_00003"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "2111.08600v1 (1).pdf_00315",
+            "sensors-22-05353.pdf_00569",
+            "2006.02535v1.pdf_00078",
+            "2006.02535v1.pdf_00176",
+            "2111.08600v1 (1).pdf_00237",
+            "sensors-22-05353.pdf_00560",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00437",
+            "sensors-22-05353.pdf_00533",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491",
+            "1812.11671v1.pdf_00009",
+            "1812.11671v1.pdf_00000",
+            "2111.08600v1 (1).pdf_00269",
+            "1812.11671v1.pdf_00013",
+            "1812.11671v1.pdf_00010"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q014",
+          "question": "What kind of supervision signal do unsupervised methods rely on?",
+          "relevant_ids": [
+            "2111.08600v1 (1).pdf_00280"
+          ],
+          "retrieved_ids": [
+            "2006.02535v1.pdf_00164",
+            "1812.11671v1.pdf_00037",
+            "2111.08600v1 (1).pdf_00268",
+            "2111.08600v1 (1).pdf_00278",
+            "1812.11671v1.pdf_00003",
+            "2111.08600v1 (1).pdf_00314",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "2006.02535v1.pdf_00159",
+            "2111.08600v1 (1).pdf_00315",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00523",
+            "2111.08600v1 (1).pdf_00282",
+            "sensors-22-05353.pdf_00543",
+            "2006.02535v1.pdf_00078",
+            "2111.08600v1 (1).pdf_00264",
+            "1901.09402v1 (1).pdf_00046"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q015",
+          "question": "What is the core idea behind stereo-based depth estimation?",
+          "relevant_ids": [
+            "2006.02535v1.pdf_00079",
+            "1812.11671v1.pdf_00002"
+          ],
+          "retrieved_ids": [
+            "2006.02535v1.pdf_00176",
+            "2111.08600v1 (1).pdf_00269",
+            "2006.02535v1.pdf_00077",
+            "sensors-22-05353.pdf_00530",
+            "1901.09402v1 (1).pdf_00069",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "luo2018.pdf_00357",
+            "2111.08600v1 (1).pdf_00315",
+            "2006.02535v1.pdf_00078",
+            "2111.08600v1 (1).pdf_00275",
+            "martins2018.pdf_00403",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00437",
+            "1901.09402v1 (1).pdf_00067",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00473",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q016",
+          "question": "What is one major limitation of monocular depth estimation highlighted by the survey?",
+          "relevant_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491",
+            "2006.02535v1.pdf_00078",
+            "2111.08600v1 (1).pdf_00315",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00427",
+            "2006.02535v1.pdf_00081",
+            "2006.02535v1.pdf_00077",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "2006.02535v1.pdf_00198",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00437",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00433",
+            "sensors-22-05353.pdf_00575",
+            "2006.02535v1.pdf_00176",
+            "1812.11671v1.pdf_00007",
+            "1812.11671v1.pdf_00000",
+            "martins2018.pdf_00400"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q017",
+          "question": "What type of neural network is used in the monocular depth model from martins2018?",
+          "relevant_ids": [
+            "martins2018.pdf_00401",
+            "martins2018.pdf_00390"
+          ],
+          "retrieved_ids": [
+            "martins2018.pdf_00408",
+            "sensors-22-05353.pdf_00534",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00446",
+            "2006.02535v1.pdf_00078",
+            "1812.11671v1.pdf_00037",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491",
+            "sensors-22-05353.pdf_00560",
+            "2006.02535v1.pdf_00077",
+            "1901.09402v1 (1).pdf_00069",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00426",
+            "1812.11671v1.pdf_00013",
+            "2111.08600v1 (1).pdf_00244",
+            "1812.11671v1.pdf_00031",
+            "2111.08600v1 (1).pdf_00315",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00429"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q018",
+          "question": "What kinds of visual cues are used by traditional handcrafted depth estimation methods?",
+          "relevant_ids": [
+            "2111.08600v1 (1).pdf_00242"
+          ],
+          "retrieved_ids": [
+            "2111.08600v1 (1).pdf_00242",
+            "2111.08600v1 (1).pdf_00228",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00426",
+            "2006.02535v1.pdf_00077",
+            "2111.08600v1 (1).pdf_00311",
+            "1812.11671v1.pdf_00033",
+            "2006.02535v1.pdf_00078",
+            "2111.08600v1 (1).pdf_00230",
+            "2111.08600v1 (1).pdf_00245",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00436",
+            "1812.11671v1.pdf_00036",
+            "2006.02535v1.pdf_00176",
+            "sensors-22-05353.pdf_00525",
+            "2111.08600v1 (1).pdf_00315"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q019",
+          "question": "Which depth estimation approach depends on two viewpoints rather than one?",
+          "relevant_ids": [
+            "martins2018.pdf_00389",
+            "2006.02535v1.pdf_00079"
+          ],
+          "retrieved_ids": [
+            "1812.11671v1.pdf_00002",
+            "martins2018.pdf_00399",
+            "2006.02535v1.pdf_00184",
+            "1812.11671v1.pdf_00004",
+            "2006.02535v1.pdf_00085",
+            "sensors-22-05353.pdf_00586",
+            "2111.08600v1 (1).pdf_00241",
+            "1812.11671v1.pdf_00000",
+            "2006.02535v1.pdf_00081",
+            "2006.02535v1.pdf_00105",
+            "martins2018.pdf_00390",
+            "2111.08600v1 (1).pdf_00283",
+            "2111.08600v1 (1).pdf_00302",
+            "martins2018.pdf_00400",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00474"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q020",
+          "question": "Which paper is a survey of monocular depth estimation methods?",
+          "relevant_ids": [
+            "1901.09402v1 (1).pdf_00044",
+            "2111.08600v1 (1).pdf_00228"
+          ],
+          "retrieved_ids": [
+            "2111.08600v1 (1).pdf_00231",
+            "2111.08600v1 (1).pdf_00234",
+            "sensors-22-05353.pdf_00525",
+            "2111.08600v1 (1).pdf_00230",
+            "1812.11671v1.pdf_00003",
+            "1901.09402v1 (1).pdf_00047",
+            "2006.02535v1.pdf_00077",
+            "2111.08600v1 (1).pdf_00229",
+            "2111.08600v1 (1).pdf_00228",
+            "2111.08600v1 (1).pdf_00235",
+            "2111.08600v1 (1).pdf_00311",
+            "2006.02535v1.pdf_00199",
+            "sensors-22-05353.pdf_00533",
+            "2111.08600v1 (1).pdf_00281",
+            "2006.02535v1.pdf_00154"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.1111111111111111
+        },
+        {
+          "question_id": "q021",
+          "question": "What problem is the 1812.11671 paper primarily trying to solve?",
+          "relevant_ids": [
+            "1812.11671v1.pdf_00002",
+            "1812.11671v1.pdf_00000"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00429",
+            "2111.08600v1 (1).pdf_00231",
+            "1901.09402v1 (1).pdf_00063",
+            "1901.09402v1 (1).pdf_00047",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "sensors-22-05353.pdf_00555",
+            "2111.08600v1 (1).pdf_00315",
+            "1812.11671v1.pdf_00003",
+            "1901.09402v1 (1).pdf_00068",
+            "1812.11671v1.pdf_00021",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00432",
+            "sensors-22-05353.pdf_00577",
+            "sensors-22-05353.pdf_00525",
+            "luo2018.pdf_00350",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q022",
+          "question": "What is the purpose of the right-view synthesis sub-task in the unsupervised approach?",
+          "relevant_ids": [
+            "1812.11671v1.pdf_00003",
+            "1812.11671v1.pdf_00004"
+          ],
+          "retrieved_ids": [
+            "sensors-22-05353.pdf_00534",
+            "luo2018.pdf_00365",
+            "1812.11671v1.pdf_00013",
+            "1812.11671v1.pdf_00025",
+            "1812.11671v1.pdf_00037",
+            "luo2018.pdf_00357",
+            "sensors-22-05353.pdf_00525",
+            "1812.11671v1.pdf_00010",
+            "1812.11671v1.pdf_00015",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00432",
+            "2111.08600v1 (1).pdf_00315",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00489",
+            "luo2018.pdf_00367",
+            "2111.08600v1 (1).pdf_00276",
+            "luo2018.pdf_00350"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q023",
+          "question": "What advantage do semi-supervised methods offer over fully supervised ones?",
+          "relevant_ids": [
+            "2111.08600v1 (1).pdf_00315"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00445",
+            "2111.08600v1 (1).pdf_00278",
+            "1812.11671v1.pdf_00009",
+            "2006.02535v1.pdf_00101",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00488",
+            "2111.08600v1 (1).pdf_00315",
+            "2111.08600v1 (1).pdf_00301",
+            "2111.08600v1 (1).pdf_00279",
+            "sensors-22-05353.pdf_00569",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00460",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00489",
+            "2111.08600v1 (1).pdf_00310",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00444",
+            "2111.08600v1 (1).pdf_00309",
+            "luo2018.pdf_00365"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.16666666666666666
+        },
+        {
+          "question_id": "q024",
+          "question": "What applications are mentioned for dense depth estimation in the survey paper?",
+          "relevant_ids": [
+            "2111.08600v1 (1).pdf_00228"
+          ],
+          "retrieved_ids": [
+            "2006.02535v1.pdf_00077",
+            "2006.02535v1.pdf_00078",
+            "2111.08600v1 (1).pdf_00315",
+            "martins2018.pdf_00394",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00437",
+            "sensors-22-05353.pdf_00533",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "2006.02535v1.pdf_00142",
+            "2006.02535v1.pdf_00176",
+            "2111.08600v1 (1).pdf_00228",
+            "sensors-22-05353.pdf_00525",
+            "2111.08600v1 (1).pdf_00227",
+            "2111.08600v1 (1).pdf_00247",
+            "2111.08600v1 (1).pdf_00241",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.1
+        },
+        {
+          "question_id": "q025",
+          "question": "What real-time challenge is highlighted for future monocular depth estimation systems?",
+          "relevant_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00427",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "2006.02535v1.pdf_00078",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491",
+            "2006.02535v1.pdf_00187",
+            "sensors-22-05353.pdf_00531",
+            "2111.08600v1 (1).pdf_00315",
+            "2006.02535v1.pdf_00189",
+            "2006.02535v1.pdf_00188",
+            "2006.02535v1.pdf_00198",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00455",
+            "sensors-22-05353.pdf_00577",
+            "2111.08600v1 (1).pdf_00263",
+            "1901.09402v1 (1).pdf_00069",
+            "2111.08600v1 (1).pdf_00302"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.5
+        },
+        {
+          "question_id": "q026",
+          "question": "What is the main difference between supervised and unsupervised monocular depth estimation?",
+          "relevant_ids": [
+            "sensors-22-05353.pdf_00569",
+            "1812.11671v1.pdf_00004"
+          ],
+          "retrieved_ids": [
+            "sensors-22-05353.pdf_00569",
+            "2111.08600v1 (1).pdf_00281",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00432",
+            "sensors-22-05353.pdf_00530",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00446",
+            "1901.09402v1 (1).pdf_00061",
+            "2111.08600v1 (1).pdf_00237",
+            "2006.02535v1.pdf_00158",
+            "1812.11671v1.pdf_00000",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00489",
+            "2111.08600v1 (1).pdf_00249",
+            "2111.08600v1 (1).pdf_00279",
+            "1812.11671v1.pdf_00033",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00460"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q027",
+          "question": "What is one reason monocular depth estimation can be brittle in new scenes?",
+          "relevant_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00437",
+            "martins2018.pdf_00400",
+            "2006.02535v1.pdf_00077",
+            "2111.08600v1 (1).pdf_00229",
+            "2006.02535v1.pdf_00078",
+            "2111.08600v1 (1).pdf_00315",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491",
+            "luo2018.pdf_00347",
+            "2006.02535v1.pdf_00175",
+            "2006.02535v1.pdf_00083",
+            "luo2018.pdf_00351",
+            "luo2018.pdf_00348",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00426",
+            "1901.09402v1 (1).pdf_00062",
+            "martins2018.pdf_00410"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.14285714285714285
+        }
+      ]
+    },
+    "hybrid": {
+      "config": "hybrid",
+      "aggregate": {
+        "Recall@1": 0.44,
+        "Recall@3": 0.64,
+        "Recall@5": 0.76,
+        "MRR": 0.5547,
+        "n_evaluated": 25,
+        "n_skipped": 3
+      },
+      "per_question": [
+        {
+          "question_id": "q001",
+          "question": "What is the main limitation of monocular depth estimation compared to stereo methods?",
+          "relevant_ids": [
+            "martins2018.pdf_00390"
+          ],
+          "retrieved_ids": [
+            "martins2018.pdf_00390",
+            "martins2018.pdf_00389",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "martins2018.pdf_00400",
+            "2006.02535v1.pdf_00176"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q002",
+          "question": "How does unsupervised monocular depth estimation avoid the need for ground truth depth data?",
+          "relevant_ids": [
+            "1812.11671v1.pdf_00003",
+            "1812.11671v1.pdf_00004"
+          ],
+          "retrieved_ids": [
+            "1812.11671v1.pdf_00003",
+            "1812.11671v1.pdf_00010",
+            "2111.08600v1 (1).pdf_00278",
+            "1812.11671v1.pdf_00000",
+            "1812.11671v1.pdf_00004"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q003",
+          "question": "What two sub-problems does the paper 1812.11671 decompose monocular depth estimation into?",
+          "relevant_ids": [
+            "1812.11671v1.pdf_00004"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "1812.11671v1.pdf_00003",
+            "1901.09402v1 (1).pdf_00044",
+            "luo2018.pdf_00355",
+            "1812.11671v1.pdf_00009"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q004",
+          "question": "What are the five main challenges for future monocular depth estimation methods identified in the thorough review paper?",
+          "relevant_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00493",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00427",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00488",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q005",
+          "question": "In what scenarios is stereo depth estimation more accurate than monocular estimation according to martins2018?",
+          "relevant_ids": [
+            "martins2018.pdf_00415"
+          ],
+          "retrieved_ids": [
+            "martins2018.pdf_00415",
+            "martins2018.pdf_00390",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00488",
+            "martins2018.pdf_00399",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q006",
+          "question": "What network architecture does martins2018 use for monocular depth estimation?",
+          "relevant_ids": [
+            "martins2018.pdf_00401"
+          ],
+          "retrieved_ids": [
+            "2006.02535v1.pdf_00176",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00427",
+            "martins2018.pdf_00393",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00473",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q007",
+          "question": "What visual cues do traditional handcrafted feature-based monocular depth estimation methods use?",
+          "relevant_ids": [
+            "2111.08600v1 (1).pdf_00242"
+          ],
+          "retrieved_ids": [
+            "2111.08600v1 (1).pdf_00242",
+            "2111.08600v1 (1).pdf_00228",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00436",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00426",
+            "2111.08600v1 (1).pdf_00248"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q010",
+          "question": "What semi-supervised methods are discussed in the thorough review paper and what advantage do they offer?",
+          "relevant_ids": [
+            "2111.08600v1 (1).pdf_00315"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00445",
+            "sensors-22-05353.pdf_00531",
+            "sensors-22-05353.pdf_00569",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00488",
+            "2111.08600v1 (1).pdf_00300"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q011",
+          "question": "What is the input and output of monocular depth estimation as described in the survey paper?",
+          "relevant_ids": [
+            "1901.09402v1 (1).pdf_00044"
+          ],
+          "retrieved_ids": [
+            "1901.09402v1 (1).pdf_00044",
+            "1812.11671v1.pdf_00012",
+            "2111.08600v1 (1).pdf_00226",
+            "sensors-22-05353.pdf_00533",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00422"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q012",
+          "question": "Why is monocular depth estimation considered an ill-posed problem?",
+          "relevant_ids": [
+            "luo2018.pdf_00349",
+            "1901.09402v1 (1).pdf_00045"
+          ],
+          "retrieved_ids": [
+            "1812.11671v1.pdf_00002",
+            "luo2018.pdf_00349",
+            "1901.09402v1 (1).pdf_00045",
+            "2111.08600v1 (1).pdf_00231",
+            "luo2018.pdf_00348"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.5
+        },
+        {
+          "question_id": "q013",
+          "question": "What is the main motivation for developing unsupervised monocular depth estimation methods?",
+          "relevant_ids": [
+            "1812.11671v1.pdf_00003"
+          ],
+          "retrieved_ids": [
+            "sensors-22-05353.pdf_00569",
+            "1812.11671v1.pdf_00000",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "2111.08600v1 (1).pdf_00248",
+            "martins2018.pdf_00395"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q014",
+          "question": "What kind of supervision signal do unsupervised methods rely on?",
+          "relevant_ids": [
+            "2111.08600v1 (1).pdf_00280"
+          ],
+          "retrieved_ids": [
+            "2111.08600v1 (1).pdf_00278",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00461",
+            "2111.08600v1 (1).pdf_00268",
+            "2111.08600v1 (1).pdf_00280",
+            "2006.02535v1.pdf_00159"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.25
+        },
+        {
+          "question_id": "q015",
+          "question": "What is the core idea behind stereo-based depth estimation?",
+          "relevant_ids": [
+            "2006.02535v1.pdf_00079",
+            "1812.11671v1.pdf_00002"
+          ],
+          "retrieved_ids": [
+            "2006.02535v1.pdf_00077",
+            "1812.11671v1.pdf_00002",
+            "2006.02535v1.pdf_00081",
+            "2006.02535v1.pdf_00079",
+            "2006.02535v1.pdf_00176"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.5
+        },
+        {
+          "question_id": "q016",
+          "question": "What is one major limitation of monocular depth estimation highlighted by the survey?",
+          "relevant_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00427",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00443",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "martins2018.pdf_00401"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.3333333333333333
+        },
+        {
+          "question_id": "q017",
+          "question": "What type of neural network is used in the monocular depth model from martins2018?",
+          "relevant_ids": [
+            "martins2018.pdf_00401",
+            "martins2018.pdf_00390"
+          ],
+          "retrieved_ids": [
+            "martins2018.pdf_00408",
+            "2111.08600v1 (1).pdf_00328",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00446",
+            "martins2018.pdf_00393",
+            "1901.09402v1 (1).pdf_00068"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q018",
+          "question": "What kinds of visual cues are used by traditional handcrafted depth estimation methods?",
+          "relevant_ids": [
+            "2111.08600v1 (1).pdf_00242"
+          ],
+          "retrieved_ids": [
+            "2111.08600v1 (1).pdf_00242",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00426",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00436",
+            "2006.02535v1.pdf_00077",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00430"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q019",
+          "question": "Which depth estimation approach depends on two viewpoints rather than one?",
+          "relevant_ids": [
+            "martins2018.pdf_00389",
+            "2006.02535v1.pdf_00079"
+          ],
+          "retrieved_ids": [
+            "martins2018.pdf_00390",
+            "1812.11671v1.pdf_00002",
+            "1812.11671v1.pdf_00004",
+            "martins2018.pdf_00389",
+            "martins2018.pdf_00400"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.25
+        },
+        {
+          "question_id": "q020",
+          "question": "Which paper is a survey of monocular depth estimation methods?",
+          "relevant_ids": [
+            "1901.09402v1 (1).pdf_00044",
+            "2111.08600v1 (1).pdf_00228"
+          ],
+          "retrieved_ids": [
+            "2111.08600v1 (1).pdf_00228",
+            "2111.08600v1 (1).pdf_00230",
+            "1901.09402v1 (1).pdf_00044",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00422",
+            "2111.08600v1 (1).pdf_00231"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q021",
+          "question": "What problem is the 1812.11671 paper primarily trying to solve?",
+          "relevant_ids": [
+            "1812.11671v1.pdf_00002",
+            "1812.11671v1.pdf_00000"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "2111.08600v1 (1).pdf_00225",
+            "2111.08600v1 (1).pdf_00231",
+            "1901.09402v1 (1).pdf_00047",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00429"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0.0
+        },
+        {
+          "question_id": "q022",
+          "question": "What is the purpose of the right-view synthesis sub-task in the unsupervised approach?",
+          "relevant_ids": [
+            "1812.11671v1.pdf_00003",
+            "1812.11671v1.pdf_00004"
+          ],
+          "retrieved_ids": [
+            "1812.11671v1.pdf_00003",
+            "1812.11671v1.pdf_00010",
+            "luo2018.pdf_00354",
+            "1812.11671v1.pdf_00012",
+            "luo2018.pdf_00365"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q023",
+          "question": "What advantage do semi-supervised methods offer over fully supervised ones?",
+          "relevant_ids": [
+            "2111.08600v1 (1).pdf_00315"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00445",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00444",
+            "sensors-22-05353.pdf_00569",
+            "2111.08600v1 (1).pdf_00301",
+            "2111.08600v1 (1).pdf_00315"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.2
+        },
+        {
+          "question_id": "q024",
+          "question": "What applications are mentioned for dense depth estimation in the survey paper?",
+          "relevant_ids": [
+            "2111.08600v1 (1).pdf_00228"
+          ],
+          "retrieved_ids": [
+            "2111.08600v1 (1).pdf_00228",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00437",
+            "2006.02535v1.pdf_00142",
+            "sensors-22-05353.pdf_00532",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00443"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q025",
+          "question": "What real-time challenge is highlighted for future monocular depth estimation systems?",
+          "relevant_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428"
+          ],
+          "retrieved_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00427",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00428",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00473",
+            "2111.08600v1 (1).pdf_00304"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.5
+        },
+        {
+          "question_id": "q026",
+          "question": "What is the main difference between supervised and unsupervised monocular depth estimation?",
+          "relevant_ids": [
+            "sensors-22-05353.pdf_00569",
+            "1812.11671v1.pdf_00004"
+          ],
+          "retrieved_ids": [
+            "sensors-22-05353.pdf_00569",
+            "1812.11671v1.pdf_00000",
+            "1812.11671v1.pdf_00004",
+            "martins2018.pdf_00395",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00488"
+          ],
+          "recalls": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0
+        },
+        {
+          "question_id": "q027",
+          "question": "What is one reason monocular depth estimation can be brittle in new scenes?",
+          "relevant_ids": [
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491"
+          ],
+          "retrieved_ids": [
+            "martins2018.pdf_00400",
+            "1901.09402v1 (1).pdf_00045",
+            "Monocular_Depth_Estimation_A_Thorough_Review (1).pdf_00491",
+            "2111.08600v1 (1).pdf_00229",
+            "martins2018.pdf_00390"
+          ],
+          "recalls": {
+            "1": 0.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.3333333333333333
+        }
+      ]
+    }
+  },
+  "generation": {
+    "aggregate": {
+      "faithfulness": 0.8241,
+      "answer_relevancy": 0.8882,
+      "n_evaluated": 25,
+      "n_scored": 25,
+      "n_null": 0,
+      "n_failed": 0
+    },
+    "per_question": [
+      {
+        "question": "What is the main limitation of monocular depth estimation compared to stereo methods?",
+        "answer": "The principal limitation of monocular depth estimation, when compared with stereo methods, is that the baseline between the viewpoints is unknown, which makes it difficult to recover absolute depth values. This ambiguity is a major challenge for monocular approaches and often requires additional sensors or learning‑based cues to estimate scale [2].  \n\n**References**  \n[2] martins2018.pdf, p. 1, “Fusion of stereo and still monocular depth estimates in a self‑supervised learning context”.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9959
+      },
+      {
+        "question": "How does unsupervised monocular depth estimation avoid the need for ground truth depth data?",
+        "answer": "Unsupervised monocular depth estimation sidesteps the requirement for ground‑truth depth maps by turning the learning problem into an image‑reconstruction task.  \nThe network is trained to synth‑esize a second view (e.g., the right image) from a single left image and then to predict disparity/depth from the original and synthesized views. The only supervisory signal is an **image‑alignment (reconstruction) loss** that measures how well the predicted view matches the actual one, together with geometric consistency constraints between the two views. Because the loss is computed directly from the input images, no explicit depth labels are needed during training【1†L1-L9】【3†L1-L7】.",
+        "faithfulness": 0.8571,
+        "answer_relevancy": 0.9854
+      },
+      {
+        "question": "What two sub-problems does the paper 1812.11671 decompose monocular depth estimation into?",
+        "answer": "The paper treats monocular depth estimation as two separate sub‑problems:  \n\n1. **Right‑view synthesis** – generating a synthetic right image from the single left input.  \n2. **Stereo matching** – estimating disparity (and thus depth) from the concatenated left and synthesized right views.  \n\nThese two stages constitute the decomposition of the monocular depth estimation task in the paper 1812.11671【2†L1-L4】【5†L9-L12】.",
+        "faithfulness": 0.8333,
+        "answer_relevancy": 0.9577
+      },
+      {
+        "question": "What are the five main challenges for future monocular depth estimation methods identified in the thorough review paper?",
+        "answer": "The review identifies five principal challenges that future monocular depth‑estimation methods must address:\n\n1. **Integration and optimisation of network frameworks** – designing architectures that combine and fine‑tune different modules effectively.  \n2. **Dataset construction** – building larger, more diverse and well‑annotated training sets.  \n3. **Handling dynamic objects and occlusions** – robustly estimating depth in scenes with moving elements and hidden surfaces.  \n4. **Generating high‑resolution depth maps** – producing detailed depth predictions rather than coarse outputs.  \n5. **Achieving real‑time performance** – ensuring that the methods run fast enough for practical, on‑the‑fly applications.  \n\n**References**  \n[1] Monocular_Depth_Estimation_A_Thorough_Review, p. 2, Section R.",
+        "faithfulness": 0.9091,
+        "answer_relevancy": 0.9661
+      },
+      {
+        "question": "In what scenarios is stereo depth estimation more accurate than monocular estimation according to martins2018?",
+        "answer": "According to the experiments reported in martins2018, stereo vision provides higher depth‑estimation accuracy than monocular vision for the majority of the range of distances that were tested; the only exception is at very short (close‑by) distances, where monocular estimates can be comparatively better【1†L4-L7】.",
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.907
+      },
+      {
+        "question": "What network architecture does martins2018 use for monocular depth estimation?",
+        "answer": "Martins 2018 builds on the “coarse‑to‑fine” encoder‑decoder design that has become standard for monocular depth prediction.  Specifically, the paper notes that most recent works (including the original Eigen et al. model) use **two or more stacked CNNs**, where a first network produces a global, low‑resolution depth map and one or more subsequent networks progressively refine this prediction at higher resolutions, incorporating local context and finer‑scale details【3】.",
+        "faithfulness": 0.8,
+        "answer_relevancy": 0.912
+      },
+      {
+        "question": "What visual cues do traditional handcrafted feature-based monocular depth estimation methods use?",
+        "answer": "Traditional handcrafted‑feature monocular depth estimation methods rely on a set of visual cues that can be extracted from a single image, including  \n\n* **Texture variations / texture gradients** – changes in texture that correlate with distance,  \n* **Occlusion boundaries** – edges where one surface blocks another,  \n* **Defocus (depth‑of‑field) cues**,  \n* **Color or haze cues** – atmospheric scattering that varies with depth,  \n* **Surface layout cues** – overall scene geometry, and  \n* **Known object size cues** – the expected size of familiar objects to infer distance.  \n\nThese cues are computed from over‑segmented superpixels and used in probabilistic models such as MRF/CRF to predict dense depth maps【1†L1-L7】【4†L1-L5】.  \n\n**References**  \n1. 2111.08600v1 (1).pdf, p. 5, Sec. D.  \n4. Monocular_Depth_Estimation_A_Thorough_Review (1).pdf, p. 1, Sec. R.",
+        "faithfulness": 0.4444,
+        "answer_relevancy": 0.9913
+      },
+      {
+        "question": "What semi-supervised methods are discussed in the thorough review paper and what advantage do they offer?",
+        "answer": "The review identifies **semi‑supervised monocular depth‑estimation methods** as approaches that combine a limited set of ground‑truth depth labels with a larger pool of unlabeled images. By doing so, they **retain much of the performance of fully supervised models while dramatically lowering the amount of manual annotation required**【1】.  \n\nOne concrete technique highlighted for semi‑supervised learning is the use of **image‑style translation (e.g., CycleGAN) to fuse synthetic images with real‑world data**, which supplies additional depth cues that pure unsupervised methods cannot obtain【4】. This integration of synthetic data **supplements missing depth information and improves accuracy without the need for extensive real‑world labeling**【4】.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6569
+      },
+      {
+        "question": "What is the input and output of monocular depth estimation as described in the survey paper?",
+        "answer": "The survey defines monocular depth estimation as taking **a single RGB image** as the input and producing **a dense depth map** (i.e., a per‑pixel depth value) as the output [1].  \n\n**References**  \n[1] 1901.09402v1, p. 1, Section “Monocular Depth Estimation: A Survey”.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8914
+      },
+      {
+        "question": "Why is monocular depth estimation considered an ill-posed problem?",
+        "answer": "Monocular depth estimation is called an ill‑posed problem because a single 2‑D image does not contain enough geometric information to determine a unique 3‑D scene. The same image can be generated by infinitely many different depth configurations, so depth cannot be inferred unambiguously from one view alone. Consequently, estimating depth from a single picture is geometrically ambiguous and requires the model to rely on learned cues (e.g., perspective, object size, texture) to resolve this ambiguity【1†L1-L5】【3†L9-L13】.  \n\n**References**  \n1. 1812.11671v1.pdf, p. 1, Section “Unsupervised monocular stereo matching”.  \n3. 1901.09402v1 (1).pdf, p. 1, Section “Monocular Depth Estimation: A Survey”.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9973
+      },
+      {
+        "question": "What is the main motivation for developing unsupervised monocular depth estimation methods?",
+        "answer": "The primary motivation for developing unsupervised monocular depth‑estimation methods is to avoid the costly and labor‑intensive requirement of large amounts of accurate ground‑truth depth data. Collecting such labeled datasets is difficult, so researchers seek unsupervised approaches that can learn depth from raw video or image sequences without explicit depth supervision【1†L2-L5】【2†L4-L7】.  \n\n**References**  \n1. sensors-22-05353.pdf, p. 15.  \n2. 1812.11671v1.pdf, p. 1.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9949
+      },
+      {
+        "question": "What kind of supervision signal do unsupervised methods rely on?",
+        "answer": "Unsupervised depth‑estimation methods do not use ground‑truth depth maps; instead they generate their own supervisory signal by treating depth prediction as an image‑reconstruction problem.  They exploit geometric constraints between views (e.g., stereo pairs or consecutive video frames) and train the network to minimise a photometric/re‑projection error that measures how well a pixel from a target view can be warped into a source view using the predicted depth and pose [1][2].",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6803
+      },
+      {
+        "question": "What is the core idea behind stereo-based depth estimation?",
+        "answer": "Stereo‑based depth estimation works by exploiting two (or more) spatially separated cameras to capture the same scene and then **matching corresponding pixels (or features) across the multiple images**. By finding where the same point appears in each view and using the known camera geometry, the disparity between the matched locations can be converted into a depth value for that point in the scene【4†L1-L4】.",
+        "faithfulness": 0.6,
+        "answer_relevancy": 0.9361
+      },
+      {
+        "question": "What is one major limitation of monocular depth estimation highlighted by the survey?",
+        "answer": "One major limitation emphasized in the survey is that monocular depth‑estimation methods are fundamentally data‑driven and therefore depend heavily on the training data; this can lead to poor generalisation to new or complex scenes and to ambiguities in situations such as optical‑illusion, reflective or translucent objects【3】.  \n\n**References**  \n[3] Monocular_Depth_Estimation_A_Thorough_Review (1).pdf, p. 15.",
+        "faithfulness": 0.75,
+        "answer_relevancy": 0.9727
+      },
+      {
+        "question": "What type of neural network is used in the monocular depth model from martins2018?",
+        "answer": "The monocular depth model in martins2018 uses a very light‑weight **convolutional neural network (CNN)** – specifically, only the coarse‑scale network from Ivanecky’s CNN architecture [1].  \n\n**References**  \n[1] martins2018.pdf, p. 5.",
+        "faithfulness": 0.3333,
+        "answer_relevancy": 0.9921
+      },
+      {
+        "question": "What kinds of visual cues are used by traditional handcrafted depth estimation methods?",
+        "answer": "Traditional handcrafted monocular depth‑estimation methods rely on a variety of visual cues that can be extracted directly from a single image.  \nThe cues mentioned in the literature include  \n\n* **Texture cues** – variations and gradients of texture across the image.  \n* **Occlusion cues** – boundaries where one surface blocks another.  \n* **Defocus / focus cues** – blur or sharpness differences caused by depth‑dependent focus.  \n* **Color / haze cues** – atmospheric scattering or color attenuation that varies with distance.  \n* **Surface layout cues** – overall scene geometry such as perspective lines.  \n* **Known object size cues** – using the expected physical size of familiar objects.  \n* **Location cues** – the image position of regions (e.g., lower parts of the image tend to be nearer).  \n* **Motion cues** – motion parallax when multiple frames are available.  \n* **Geometric‑context cues** – relationships among super‑pixels that capture shape and spatial arrangement.\n\nThese cues are combined after over‑segmenting the image into super‑pixels and computing color, texture, motion and geometric‑context features for each region.  \n\n**References**  \n[1] 2111.08600v1, p. 5 – lists texture variations, occlusion boundaries, defocus, color/haze, surface layout and size of known objects, and mentions color, location, texture, motion and geometric‑context features.  \n[2] Monocular_Depth_Estimation_A_Thorough_Review, p. 1 – enumerates texture variations, texture gradients, haze, relative object sizes, occlusions, motion parallax and focus as depth cues.",
+        "faithfulness": 0.9091,
+        "answer_relevancy": 0.9564
+      },
+      {
+        "question": "Which depth estimation approach depends on two viewpoints rather than one?",
+        "answer": "The depth‑estimation approach that relies on two viewpoints is **stereo vision**, which uses a pair of cameras (or two views) to triangulate depth — its performance depends on the geometry of the two cameras and the baseline between them【4†L1-L4】【1†L9-L12】.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9607
+      },
+      {
+        "question": "Which paper is a survey of monocular depth estimation methods?",
+        "answer": "The paper titled **“Monocular Depth Estimation: A Survey”** (by Amlaan Bhoi) is a survey of monocular depth estimation methods【3】.  \n\n**References**  \n[3] Source: 1901.09402v1 (1).pdf, Page 1, Section: Monocular Depth Estimation: A Survey.",
+        "faithfulness": 0.6667,
+        "answer_relevancy": 0.8679
+      },
+      {
+        "question": "What problem is the 1812.11671 paper primarily trying to solve?",
+        "answer": "The provided context does not contain sufficient information to answer this question.",
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0
+      },
+      {
+        "question": "What is the purpose of the right-view synthesis sub-task in the unsupervised approach?",
+        "answer": "The right‑view synthesis sub‑task is used to generate a synthetic right image from the single left input. By creating this counterpart view, the method can then feed the concatenated left‑and‑synthesized‑right images to a stereo‑matching network, allowing depth (disparity) to be estimated with explicit geometric constraints rather than regressing depth directly from a single image【1†L1-L4】【3†L9-L13】.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9022
+      },
+      {
+        "question": "What advantage do semi-supervised methods offer over fully supervised ones?",
+        "answer": "Semi‑supervised approaches combine a modest amount of ground‑truth depth labels with a much larger pool of unlabeled images.  By doing so they can attain performance that is close to fully supervised methods while dramatically lowering the amount of costly manual annotation required — the small labeled set supplies the necessary supervision, and the abundant unlabeled data boosts accuracy without the full labeling burden【1†L4-L9】.  This balance makes semi‑supervised training attractive when annotation resources are limited.  \n\n**References**  \n[1] Monocular_Depth_Estimation_A_Thorough_Review (1).pdf, p. 6, Section R.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7718
+      },
+      {
+        "question": "What applications are mentioned for dense depth estimation in the survey paper?",
+        "answer": "The survey notes that dense depth estimation is applied in autonomous‑driving / self‑driving vehicle systems and in medical imaging applications【3†L5-L9】【2†L1-L4】.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9606
+      },
+      {
+        "question": "What real-time challenge is highlighted for future monocular depth estimation systems?",
+        "answer": "Future monocular depth‑estimation systems must overcome the difficulty of attaining **real‑time performance (real‑time inference)**, which is identified as a key challenge for upcoming methods【2†L1-L4】.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9774
+      },
+      {
+        "question": "What is the main difference between supervised and unsupervised monocular depth estimation?",
+        "answer": "The key distinction is how the training signal is obtained.  \n* **Supervised monocular depth estimation** learns directly from explicit ground‑truth depth maps that have been labeled for each image.  \n* **Unsupervised monocular depth estimation** does not use any ground‑truth depth; instead it trains the network by minimizing image‑reconstruction losses (e.g., synthesizing a right view from a left view) or other geometric constraints, thereby avoiding the need for costly depth labeling【1†L1-L4】【2†L1-L5】.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9877
+      },
+      {
+        "question": "What is one reason monocular depth estimation can be brittle in new scenes?",
+        "answer": "Monocular depth estimation can be brittle in new scenes because data‑driven methods depend heavily on the training data; if the training set does not cover the diversity of real‑world environments, the model may fail to generalize to previously unseen or more complex scenes【3†L9-L13】.  \n\n**References**  \n- Monocular_Depth_Estimation_A_Thorough_Review (1).pdf, p. 15.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.983
+      }
+    ],
+    "failed": []
+  }
+}
