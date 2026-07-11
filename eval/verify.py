@@ -30,19 +30,19 @@
 
 
 # paste into a quick python script or terminal
-from src.pipeline import RAGPipeline
+# from src.pipeline import RAGPipeline
 
-pipeline = RAGPipeline(llm_client=None)
+# pipeline = RAGPipeline(llm_client=None)
 
-failures = [
-    ("q001", "What is the main limitation of monocular depth estimation compared to stereo methods?"),
-    ("q006", "What network architecture does martins2018 use for monocular depth estimation?"),
-    ("q013", "What is the main motivation for developing unsupervised monocular depth estimation?"),
-]
+# failures = [
+#     ("q001", "What is the main limitation of monocular depth estimation compared to stereo methods?"),
+#     ("q006", "What network architecture does martins2018 use for monocular depth estimation?"),
+#     ("q013", "What is the main motivation for developing unsupervised monocular depth estimation?"),
+# ]
 
-for qid, query in failures:
-    result = pipeline.retrieve(query)
-    print(f"\n{qid}: {query[:60]}...")
-    for r in result["final_results"]:
-        print(f"  {r['chunk_id']}  score={r['rerank_score']:.3f}")
-        print(f"  {r['text'][:100]}...")
+# for qid, query in failures:
+#     result = pipeline.retrieve(query)
+#     print(f"\n{qid}: {query[:60]}...")
+#     for r in result["final_results"]:
+#         print(f"  {r['chunk_id']}  score={r['rerank_score']:.3f}")
+#         print(f"  {r['text'][:100]}...")
