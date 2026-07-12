@@ -7,7 +7,7 @@
 > portfolio project demonstrating end-to-end AI engineering from ingestion
 > through evaluation.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://fyp-research-assistant.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://fyp-research-assistant-a4gb5kde2p24dphfc8pgtz.streamlit.app/)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/)
 [![RAGAS](https://img.shields.io/badge/Eval-RAGAS-8A2BE2)](https://docs.ragas.io)
 [![OpenRouter](https://img.shields.io/badge/LLM-OpenRouter-ff6b35)](https://openrouter.ai)
@@ -687,4 +687,4 @@ engineering practices:
 **Corpus:** 8 academic papers on monocular and stereo depth estimation
 (~611 chunks after processing)
 
-**Live demo:** [fyp-research-assistant.streamlit.app](https://fyp-research-assistant.streamlit.app)
+**Live demo:** [fyp-research-assistant.streamlit.app](https://fyp-research-assistant-a4gb5kde2p24dphfc8pgtz.streamlit.app/)
