@@ -13,15 +13,23 @@ from src.ingestion.chunker import DocumentChunk
 from pathlib import Path
 
 LOCAL_MODEL_PATH = Path("models/Embedding models/bge-base-en")
+EMBEDDING_MODEL_HF_ID = "BAAI/bge-base-en-v1.5"
 # BGE models recommend prefixing queries (not documents) with this instruction
 # for retrieval tasks — improves alignment between query and document vectors.
 QUERY_INSTRUCTION = "Represent this sentence for searching relevant passages: "
 
 
 class Embedder:
-    def __init__(self, model_name: str = LOCAL_MODEL_PATH):
+    # USING EMBEDDING MODEL LOCALLY WHEN I WAS BUILDING THIS--------------
+
+    # def __init__(self, model_name: str = LOCAL_MODEL_PATH):
+    #     print(f"Loading embedding model: {model_name} (first run downloads weights)")
+    #     self.model = SentenceTransformer(str(LOCAL_MODEL_PATH))
+
+    # FIX FOR STREAMLIT DEPLOYMENT: NOW USING HF ID FOR THIS EMBEDDING MODEL. SO, IT WONT CRASH ON START UP
+    def __init__(self, model_name: str = EMBEDDING_MODEL_HF_ID):
         print(f"Loading embedding model: {model_name} (first run downloads weights)")
-        self.model = SentenceTransformer(str(LOCAL_MODEL_PATH))
+        self.model = SentenceTransformer(EMBEDDING_MODEL_HF_ID)
 
     def embed_documents(self, chunks: list[DocumentChunk]) -> np.ndarray:
         """Embed chunk texts (no instruction prefix — documents are embedded plain)."""
