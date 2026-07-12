@@ -4,8 +4,8 @@ rank_bm25
 openai
 pytest
 
-pymupdf==1.24.1
-pymupdf4llm==0.0.17
+pymupdf
+pymupdf4llm
 langchain-text-splitters==0.2.0
 langchain-core==0.2.5
 
