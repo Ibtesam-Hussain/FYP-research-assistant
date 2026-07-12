@@ -5,8 +5,6 @@ __pycache__/
 data/processed/*
 data/raw/*
 !data/raw/what-to-add.txt
-chroma*/
-bm25*
-bm25*/ 
 models/
 loading-script.py
+.streamlit/
